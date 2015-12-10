@@ -37,7 +37,7 @@
 					@if(isFriend) {
 					<li><a href="@{routes.UserController.deleteFriend(user.id, isSubscribed)}"><font size="2">Unfriend</font></a></li>
 					}else{
-					<li><a href="@{routes.UserController.addFriend(user.id, isSubscribed)}"><font size="2">Send Friend Request</font></a></li>
+					<li><a href="@{routes.UserController.addFriend(user.id, isSubscribed)}"><font size="2">Add Friend</font></a></li>
 					}
 					@if(isSubscribed) {
 					<li><a href="@{routes.UserController.deleteSubscribe(user.id, isFriend)}"><font size="2">Unsubscribe</font></a></li>

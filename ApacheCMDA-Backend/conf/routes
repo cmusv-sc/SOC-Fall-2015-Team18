@@ -51,7 +51,7 @@ PUT           /users/update/:id                                                 
 DELETE        /users/delete/:id                                                                         @controllers.UserController.deleteUser(id: Long)
 GET			  /users/getAllUsers/json																	@controllers.UserController.getAllUsers(format: String="json")
 POST		  /users/isUserValid																		@controllers.UserController.isUserValid
-DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameandPassword(userName: String, password: String)
+DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameAndPassword(userName: String, password: String)
 GET           /users/:id                                                                                @controllers.UserController.getUser(id: Long, format: String="json")
 
 # Group
@@ -59,6 +59,7 @@ POST          /userGroup/add                                                    
 GET           /userGroup/getAllUsersInGroup/:id                                                         @controllers.UserGroupController.getAllUsersInGroup(id: Long, format: String="json")
 GET           /userGroup/getAllUserGroup/:id                                                            @controllers.UserGroupController.getAllUserGroup(id: Long, format: String="json")
 POST          /userGroup/addUserIntoUserGroup                                                           @controllers.UserGroupController.addUserIntoUserGroup
+POST          /userGroup/isBelongToUserGroup                                                            @controllers.UserGroupController.isBelongToUserGroup
 GET           /userGroup/:id                                                                            @controllers.UserGroupController.getUserGroup(id: Long, format: String="json")
 
 # Friend
@@ -74,6 +75,41 @@ GET           /subscriber/getSubscriberByUserId/:id                             
 GET           /subscriber/getCollectorByUserId/:id                                                      @controllers.SubscriberController.getCollectorByUserId(id: Long, format: String="json")
 POST          /subscriber/isSubscriberValid                                                             @controllers.SubscriberController.isSubscriberValid
 GET           /subscriber/:id                                                                           @controllers.SubscriberController.getSubscriber(id: Long, format: String="json")
+
+
+#Workflow
+GET           /workflow/getAllWorkflows/json                                                            @controllers.WorkflowController.getAllWorkflows(format: String="json")
+GET           /workflow/getWorkflow/id/:id                                                              @controllers.WorkflowController.getWorkflow(id: Long, format: String="json")
+POST          /workflow/addWorkflow                                                                     @controllers.WorkflowController.addWorkflow
+GET           /workflow/getAllLevels/:id                                                                @controllers.WorkflowController.getAllLevels(id: Long, format: String="json")
+POST          /workflow/addLevel                                                                        @controllers.WorkflowController.addLevel
+POST          /workflow/addComment                                                                      @controllers.WorkflowController.addComment
+GET           /workflow/getWorkflowByUserId/:id                                                         @controllers.WorkflowController.getWorkflowByUserId(id: Long, format: String="json")
+
+
+
+#Popularity
+GET            /workflow/getViewCount/:id                                                               @controllers.WorkflowController.getWorkflowViewCount(id: Long, format: String= "json")
+GET            /workflow/updateViewCount/:id                                                            @controllers.WorkflowController.updateWorkflowViewCount(id: Long, format: String= "json")
+GET            /workflow/getUsageCount/:id                                                              @controllers.WorkflowController.getWorkflowUsageCount(id: Long, format: String= "json")
+PUT            /workflow/updateUsageCount/id/:id                                                        @controllers.WorkflowController.updateWorkflowUsageCount(id: Long)
+GET            /workflow/getDownloadCount/:id                                                           @controllers.WorkflowController.getWorkflowDownloadCount(id: Long, format: String= "json")
+PUT            /workflow/updateDownloadCount/id/:id                                                     @controllers.WorkflowController.updateWorkflowDownloadCount(id: Long)
+GET            /workflow/getCommentCount/:id                                                            @controllers.WorkflowController.getWorkflowCommentCount(id: Long, format: String= "json")
+PUT            /workflow/updateCommentCount/id/:id                                                      @controllers.WorkflowController.updateWorkflowCommentCount(id: Long)
+GET            /workflow/getReferenceCount/:id                                                          @controllers.WorkflowController.getWorkflowReferenceCount(id: Long, format: String= "json")
+PUT            /workflow/updateReferenceCount/id/:id                                                    @controllers.WorkflowController.updateWorkflowReferenceCount(id: Long)
+GET            /workflow/getTop10WorkflowByViewCount/json                                               @controllers.WorkflowController.getTop10WorkflowByViewCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByUsageCount/json                                              @controllers.WorkflowController.getTop10WorkflowByUsageCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByCommentCount/json                                            @controllers.WorkflowController.getTop10WorkflowByCommentCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByDownloadCount/json                                           @controllers.WorkflowController.getTop10WorkflowByDownloadCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByReferenceCount/json                                          @controllers.WorkflowController.getTop10WorkflowByReferenceCount(format: String = "json")
+
+
+#Tag
+GET           /tag/getAllTags/json                                                                      @controllers.TagController.getAllTags(format: String="json")
+GET           /tag/getTag/id/:id/json                                                                   @controllers.TagController.getTag(id: Long, format: String="json")
+POST          /tag/addTag                                                                               @controllers.TagController.addTag
 
 # Map static resources from the /public folder to the /assets URL path
 GET           /assets/*file                                                                             controllers.Assets.at(path="/public", file)

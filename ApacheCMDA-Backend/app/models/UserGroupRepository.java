@@ -14,9 +14,11 @@ import java.util.List;
 @Named
 @Singleton
 public interface UserGroupRepository extends CrudRepository<UserGroup, Long> {
-    List<UserGroup> findByGroupName(String groupName);
 
+    List<UserGroup> findByGroupName(String groupName);
     @Query(value = "select u.userGroupId from UserGroupAndUser u where (u.userId like ?1) ", nativeQuery = true)
     List<BigInteger> findAllUserGroupId(Long id);
+
+
 
 }

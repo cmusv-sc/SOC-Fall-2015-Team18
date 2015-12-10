@@ -54,6 +54,8 @@ GET         /workflows                                          controllers.Work
 GET         /workflow/workflowCreating                          controllers.WorkflowController.handleCreateWorkflow()
 GET         /workflow/linkTags                                  controllers.WorkflowController.linkTags()
 GET         /workflow/disWorkflow                               controllers.WorkflowController.displayWorkflow(id: Long)
+GET         /workflow/newLevel/:id                              controllers.WorkflowController.addLevelComment(id: Long)
+GET         /workflow/newComment/:wid/:lid                      controllers.WorkflowController.addSingleComment(wid: Long, lid: Long)
 
 # Tag Model
 GET			/tag											controllers.TagController.home(email ?= null, vfile ?= null, dataset ?= null)

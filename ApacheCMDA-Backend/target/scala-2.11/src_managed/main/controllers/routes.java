@@ -1,13 +1,15 @@
 // @SOURCE:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Backend/conf/routes
-// @HASH:8be9e65a5cccb2ada48de33c23365845c3fe7c94
-// @DATE:Fri Nov 20 20:53:35 UTC 2015
+// @HASH:85296ae3a79c9d88d93196e62ccc160e751446a6
+// @DATE:Fri Dec 04 02:39:46 UTC 2015
 
 package controllers;
 
 public class routes {
 public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets();
+public static final controllers.ReverseTagController TagController = new controllers.ReverseTagController();
 public static final controllers.ReverseSubscriberController SubscriberController = new controllers.ReverseSubscriberController();
 public static final controllers.ReverseInstrumentController InstrumentController = new controllers.ReverseInstrumentController();
+public static final controllers.ReverseWorkflowController WorkflowController = new controllers.ReverseWorkflowController();
 public static final controllers.ReverseUserGroupController UserGroupController = new controllers.ReverseUserGroupController();
 public static final controllers.ReverseUserController UserController = new controllers.ReverseUserController();
 public static final controllers.ReverseParameterController ParameterController = new controllers.ReverseParameterController();
@@ -17,8 +19,10 @@ public static final controllers.ReverseFriendController FriendController = new c
 
 public static class javascript {
 public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets();
+public static final controllers.javascript.ReverseTagController TagController = new controllers.javascript.ReverseTagController();
 public static final controllers.javascript.ReverseSubscriberController SubscriberController = new controllers.javascript.ReverseSubscriberController();
 public static final controllers.javascript.ReverseInstrumentController InstrumentController = new controllers.javascript.ReverseInstrumentController();
+public static final controllers.javascript.ReverseWorkflowController WorkflowController = new controllers.javascript.ReverseWorkflowController();
 public static final controllers.javascript.ReverseUserGroupController UserGroupController = new controllers.javascript.ReverseUserGroupController();
 public static final controllers.javascript.ReverseUserController UserController = new controllers.javascript.ReverseUserController();
 public static final controllers.javascript.ReverseParameterController ParameterController = new controllers.javascript.ReverseParameterController();
@@ -30,8 +34,10 @@ public static final controllers.javascript.ReverseFriendController FriendControl
 
 public static class ref {
 public static final controllers.ref.ReverseAssets Assets = new controllers.ref.ReverseAssets();
+public static final controllers.ref.ReverseTagController TagController = new controllers.ref.ReverseTagController();
 public static final controllers.ref.ReverseSubscriberController SubscriberController = new controllers.ref.ReverseSubscriberController();
 public static final controllers.ref.ReverseInstrumentController InstrumentController = new controllers.ref.ReverseInstrumentController();
+public static final controllers.ref.ReverseWorkflowController WorkflowController = new controllers.ref.ReverseWorkflowController();
 public static final controllers.ref.ReverseUserGroupController UserGroupController = new controllers.ref.ReverseUserGroupController();
 public static final controllers.ref.ReverseUserController UserController = new controllers.ref.ReverseUserController();
 public static final controllers.ref.ReverseParameterController ParameterController = new controllers.ref.ReverseParameterController();

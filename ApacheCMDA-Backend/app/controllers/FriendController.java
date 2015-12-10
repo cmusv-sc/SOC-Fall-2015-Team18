@@ -39,11 +39,10 @@ public class FriendController extends Controller {
             System.out.println("Friend not created, expecting Json data");
             return badRequest("Friend not created, expecting Json data");
         }
-        System.out.println("Here it is!");
+
         Long user1Id = json.path("user1Id").asLong();
-        System.out.println("Here it is:"+user1Id);
         Long user2Id = json.path("user2Id").asLong();
-        System.out.println("Here it is:"+user2Id);
+
         try {
             if (userRepository.findOne(user1Id) == null) {
                 System.out.println("User1 not found");
@@ -54,8 +53,7 @@ public class FriendController extends Controller {
                 System.out.println("User2 not found");
                 return badRequest("User2 not found");
             }
-            System.out.println("user1Id: "+user1Id);
-            System.out.println("user2Id: "+user2Id);
+
             User user1 = userRepository.findOne(user1Id);
             User user2 = userRepository.findOne(user2Id);
             Friend friend = null;
@@ -86,17 +84,16 @@ public class FriendController extends Controller {
             return badRequest("User id is null");
         }
 
-        List<Friend> userList1 = friendRepository.findByUser1_Id(id);
-        List<Friend> userList2 = friendRepository.findByUser2_Id(id);
+        List<Friend> friendList1 = friendRepository.findByUser1_Id(id);
+        List<Friend> friendList2 = friendRepository.findByUser2_Id(id);
 
-        List<User> userList = new ArrayList<User>();
-        for(Friend friend : userList1){
+        List<User>  userList = new ArrayList<User>();
+        for(Friend friend : friendList1){
             userList.add(friend.getUser2());
         }
-        for(Friend friend : userList2){
+        for(Friend friend : friendList2){
             userList.add(friend.getUser1());
         }
-
         String result = new Gson().toJson(userList);
 
         try {
@@ -166,4 +163,5 @@ public class FriendController extends Controller {
         }
 
     }
+
 }

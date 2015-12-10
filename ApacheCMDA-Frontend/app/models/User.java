@@ -115,8 +115,16 @@ public class User {
 			return false;
 		}
 		else {
-			System.out.println("isFriend value "+dataSetNode.asText());
-			return dataSetNode.asText().trim().equals("1");
+			String isFriendValue = dataSetNode.asText();
+			System.out.println("isFriend value "+isFriendValue);
+			boolean tAns = isFriendValue.trim().equals("1");
+			if(tAns) {
+				System.out.println("Xin Testing tAns");
+			}
+			else {
+				System.out.println("Xin Testing not tAns");
+			}
+			return tAns;
 		}
 	}
 
@@ -153,8 +161,9 @@ public class User {
 			return false;
 		}
 		else {
-			System.out.println("isSubscribed value "+dataSetNode.asText());
-			return dataSetNode.asText().trim().equals("1");
+			String isSubscribeValue = dataSetNode.asText();
+			System.out.println("isSubscribed value "+isSubscribeValue);
+			return isSubscribeValue.trim().equals("1");
 		}
 	}
 
@@ -212,7 +221,7 @@ public class User {
 		JsonNode dataSetNode = APICall.postAPI(ADD_NEW_USER, queryJson);
 
 		if (dataSetNode == null || dataSetNode.has("error")) {
-			System.out.println("user creating failed: "+dataSetNode.toString());
+			System.out.println("user creating failed: "+dataSetNode.asText());
 			return false;
 		}
 		return true;
@@ -236,8 +245,9 @@ public class User {
 			return "";
 		}
 		else {
-			System.out.println("User "+dataSetNode.asText());
-			return dataSetNode.asText();
+			String id = (dataSetNode.get("userId")).toString();
+			System.out.println("User "+id);
+			return id;
 		}
 	}
 

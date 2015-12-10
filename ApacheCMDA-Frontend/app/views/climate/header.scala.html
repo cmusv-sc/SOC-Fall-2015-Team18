@@ -96,7 +96,9 @@
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="@routes.UserController.profile">Profile</a></li>
+							@if(session.get("userId").equals("112")) {
 							<li><a href="@routes.UserController.allUsers">All Users</a></li>
+							}
 							<li><a href="@routes.UserController.showFriends">Friends</a></li>
 							<li><a href="@routes.UserController.showSubscriptions">Subscriptions</a></li>
 							<li><a href="@routes.UserGroupController.showGroups">User Groups</a></li>

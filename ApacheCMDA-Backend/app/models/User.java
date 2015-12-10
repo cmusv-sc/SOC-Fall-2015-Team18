@@ -37,9 +37,6 @@ public class User {
 	private String researchFields;
 	private String description;
 
-	// @OneToMany(mappedBy = "user", cascade={CascadeType.ALL})
-	// private Set<ClimateService> climateServices = new
-	// HashSet<ClimateService>();
 
 	public User() {
 	}

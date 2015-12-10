@@ -16,121 +16,201 @@
  */
 package models;
 
-import java.util.Date;
 import java.util.List;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 
 
 @Entity
 public class Workflow {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String name;
-	private String purpose;
-	private Date createTime;
-	private String versionNo;
-	private long rootWorkflowId;
+	@Column(unique = true)
+	private String title;
+	private String description;
+	private String image;
+	private String contributor;
+	private String instruction;
+	private String dataset;
+	private Long userId;
+	// for popularity
+	private int viewCount = 0;
+	private int usageCount = 0;
+	private int commentCount = 0;
+	private int downloadCount = 0;
+	private int referenceCount = 0;
+
+	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
+	@JoinTable(name = "WorkflowAndTag", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "tagId", referencedColumnName = "id") })
+	private List<Tag> tagList;
+
 	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE})
-	@JoinTable(name = "WorkflowAndUser", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "userId", referencedColumnName = "id") })
-	private List<User> userSet;
-	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE})
-	@JoinTable(name = "WorkflowAndClimateService", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "climateServiceId", referencedColumnName = "id") })
-	private List<ClimateService> climateServiceSet;
+	@JoinTable(name = "WorkflowAndLevel", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "levelId", referencedColumnName = "id") })
+	private List<Level> levelList;
+
+
 
 	public Workflow() {
 	}
 
-	public Workflow(String name, String purpose, Date createTime,
-			String versionNo, long rootWorkflowId, List<User> userSet,
-			List<ClimateService> climateServiceSet) {
-		super();
-		this.name = name;
-		this.purpose = purpose;
-		this.createTime = createTime;
-		this.versionNo = versionNo;
-		this.rootWorkflowId = rootWorkflowId;
-		this.userSet = userSet;
-		this.climateServiceSet = climateServiceSet;
+	public Workflow(String title, String description, String image, String contributor, String instruction, String dataset, List<Tag> tagList, List<Level> levelList, Long userId
+					, int viewCount, int usageCount, int commentCount, int downloadCount, int referenceCount) {
+		this.title = title;
+		this.description = description;
+		this.image = image;
+		this.contributor = contributor;
+		this.instruction = instruction;
+		this.dataset = dataset;
+		this.tagList = tagList;
+		this.levelList = levelList;
+		this.userId = userId;
+
+		this.viewCount =viewCount;
+		this.usageCount = usageCount;
+		this.commentCount = commentCount;
+		this.downloadCount = downloadCount;
+		this.referenceCount = referenceCount;
 	}
 
-	public String getName() {
-		return name;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 
-	public String getPurpose() {
-		return purpose;
+	public int getViewCount() {
+		return viewCount;
 	}
 
-	public void setPurpose(String purpose) {
-		this.purpose = purpose;
+	public void setViewCount(int viewCount) {
+		this.viewCount = viewCount;
 	}
 
-	public Date getCreateTime() {
-		return createTime;
+	public int getUsageCount() {
+		return usageCount;
 	}
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setUsageCount(int usageCount) {
+		this.usageCount = usageCount;
 	}
 
-	public String getVersionNo() {
-		return versionNo;
+	public int getCommentCount() {
+		return commentCount;
 	}
 
-	public void setVersionNo(String versionNo) {
-		this.versionNo = versionNo;
+	public void setCommentCount(int commentCount) {
+		this.commentCount = commentCount;
 	}
 
-	public long getRootWorkflowId() {
-		return rootWorkflowId;
+	public int getDownloadCount() {
+		return downloadCount;
 	}
 
-	public void setRootWorkflowId(long rootWorkflowId) {
-		this.rootWorkflowId = rootWorkflowId;
+	public void setDownloadCount(int downloadCount) {
+		this.downloadCount = downloadCount;
 	}
 
-	public List<User> getUserSet() {
-		return userSet;
+	public int getReferenceCount() {
+		return referenceCount;
 	}
 
-	public void setUserSet(List<User> userSet) {
-		this.userSet = userSet;
-	}
-
-	public List<ClimateService> getClimateServiceSet() {
-		return climateServiceSet;
-	}
-
-	public void setClimateServiceSet(List<ClimateService> climateServiceSet) {
-		this.climateServiceSet = climateServiceSet;
+	public void setReferenceCount(int referenceCount) {
+		this.referenceCount = referenceCount;
 	}
 
 	public long getId() {
 		return id;
 	}
 
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	public String getContributor() {
+		return contributor;
+	}
+
+	public void setContributor(String contributor) {
+		this.contributor = contributor;
+	}
+
+	public String getInstruction() {
+		return instruction;
+	}
+
+	public void setInstruction(String instruction) {
+		this.instruction = instruction;
+	}
+
+	public List<Tag> getTagList() {
+		return tagList;
+	}
+
+	public void setTagList(List<Tag> tagList) {
+		this.tagList = tagList;
+	}
+
+	public List<Level> getLevelList() {
+		return levelList;
+	}
+
+	public void setLevelList(List<Level> levelList) {
+		this.levelList = levelList;
+	}
+
+	public String getDataset() {
+		return dataset;
+	}
+
+	public void setDataset(String dataset) {
+		this.dataset = dataset;
+	}
+
+	public List<Tag> getTags() {
+		return tagList;
+	}
+
+	public void setTags(List<Tag> tags) {
+		this.tagList = tags;
+	}
+
 	@Override
 	public String toString() {
-		return "Workflow [id=" + id + ", name=" + name + ", purpose=" + purpose
-				+ ", createTime=" + createTime + ", versionNo=" + versionNo
-				+ ", rootWorkflowId=" + rootWorkflowId + ", userSet=" + userSet
-				+ ", climateServiceSet=" + climateServiceSet + "]";
+		return "Workflow{" +
+				"id=" + id +
+				", title='" + title + '\'' +
+				", description='" + description + '\'' +
+				", image='" + image + '\'' +
+				", contributor='" + contributor + '\'' +
+				", instruction='" + instruction + '\'' +
+				", dataset='" + dataset + '\'' +
+				'}';
 	}
-	
-	
 }

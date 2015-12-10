@@ -1,4 +1,4 @@
-@(workflow: metadata.Workflow)
+@(workflow: metadata.Workflow, commentForm: play.data.Form[metadata.Comment])
 
 @import helper._
 
@@ -81,11 +81,6 @@
                                                               id="workflowImg" class="img-responsive">
                     </a></td>
                 </tr>
-                <tr>
-                    <td><a id="commentLink" href=""> <textarea
-                            class="form-control" rows="3" id="comment"></textarea>
-                    </a></td>
-                </tr>
                 </tbody>
             </table>
             <br>
@@ -93,6 +88,51 @@
         </form>
     </div>
 
+    <div style="clear: both;" align="center">
+        @if(workflow.visibility == 1) {
+            @helper.form(routes.WorkflowController.addLevelComment(workflow.getId())) {
+            <div class = "form-group" id="commentForm">
+                @textarea(commentForm("Comment on workflow"), 'rows -> 3, 'style -> "width: 80%;")
+            </div>
+            <input class="btn" type="submit" value="Add Comments">
+            }
+        }
+        @for(level <- workflow.getLevelList()){
+        <div class="pi">
+            <div>
+                <h5 class="alignleft"><a href = "@{routes.UserController.oneUser(level.comment.userId)}">User @level.comment.userName</a></h5>
+                <h5 class="alignright">Posted on @level.comment.date.toString()</h5>
+            </div>
+            <div class="pcommenttext" style="clear: both;" align="left">
+                <p class="fontnewroman">@level.comment.comments</p>
+            </div>
+            <div class="pcomment">
+                @if(level.commentList.size()>0) {
+                <h5 class="alignleft">Replies</h5>
+                }
+                @for(eachComment <- level.commentList){
+                <div class="pcontent" style="clear: both;">
+                    <div>
+                        <h5 class="alignleft"><a href = "@{routes.UserController.oneUser(eachComment.userId)}">User @eachComment.userName</a></h5>
+                        <h5 class="alignright">Posted on @eachComment.date.toString()</h5>
+                    </div>
+                    <div class="pcommenttext" style="clear: both;" align="left">
+                        <p class="fontnewroman">@eachComment.comments</p>
+                    </div>
+                </div>
+                }
+                @if(workflow.visibility == 1) {
+                    @helper.form(routes.WorkflowController.addSingleComment(workflow.getId(), level.id)) {
+                    <div class = "form-group">
+                        @textarea(commentForm("Reply on this comment"), 'rows -> 3, 'style -> "width: 80%;")
+                    </div>
+                    <input class="btn" type="submit" value="Reply">
+                    }
+                }
+            </div>
+        </div>
+        }
+    </div>
 
     </body>
 

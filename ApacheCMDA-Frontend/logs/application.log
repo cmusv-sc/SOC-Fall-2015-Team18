@@ -1,18 +1,168 @@
-2015-11-30 16:04:41,970 - [INFO] - from play in pool-4-thread-5 
+2015-12-10 17:59:41,175 - [INFO] - from play in pool-4-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-11-30 16:05:22,076 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-10 18:00:00,874 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-11-30 16:05:26,714 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-10 18:00:01,320 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-11-30 16:05:30,524 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-10 18:00:06,237 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-30 16:06:06,495 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+2015-12-10 18:00:43,802 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
 http://localhost:9034/workflow/getAllWorkflows/json
 
-2015-11-30 16:06:09,580 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
-http://localhost:9034/tag/getAllTags/json
+2015-12-10 18:01:51,513 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:02:10,302 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:12:35,261 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:12:59,480 - [INFO] - from application in play-akka.actor.default-dispatcher-59 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:17:24,568 - [INFO] - from application in play-akka.actor.default-dispatcher-69 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:38:18,372 - [INFO] - from application in play-akka.actor.default-dispatcher-95 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:38:20,927 - [INFO] - from application in play-akka.actor.default-dispatcher-96 
+http://localhost:9034/workflow/getWorkflow/id/1
+
+2015-12-10 18:38:24,848 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/users/113
+
+2015-12-10 18:38:28,070 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/friend/113
+
+2015-12-10 18:38:32,445 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
+http://localhost:9034/subscriber/getSubscriberByUserId/113
+
+2015-12-10 18:38:34,960 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/userGroup/getAllUserGroup/113
+
+2015-12-10 18:38:39,466 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:38:41,166 - [INFO] - from application in play-akka.actor.default-dispatcher-102 
+http://localhost:9034/workflow/getWorkflow/id/1
+
+2015-12-10 18:39:07,374 - [INFO] - from application in play-akka.actor.default-dispatcher-102 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:39:09,384 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:39:17,565 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:39:26,020 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:39:30,336 - [INFO] - from application in play-akka.actor.default-dispatcher-91 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:39:31,915 - [INFO] - from application in play-akka.actor.default-dispatcher-105 
+http://localhost:9034/workflow/getWorkflow/id/1
+
+2015-12-10 18:43:21,583 - [INFO] - from application in play-akka.actor.default-dispatcher-105 
+http://localhost:9034/climateService/getAllClimateServices/json
+
+2015-12-10 18:43:29,271 - [INFO] - from application in play-akka.actor.default-dispatcher-120 
+http://localhost:9034/friend/110
+
+2015-12-10 18:43:39,358 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+http://localhost:9034/users/110
+
+2015-12-10 18:45:27,805 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
+http://localhost:9034/users/114
+
+2015-12-10 18:45:31,245 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
+http://localhost:9034/friend/114
+
+2015-12-10 18:45:33,954 - [INFO] - from application in play-akka.actor.default-dispatcher-145 
+http://localhost:9034/subscriber/getSubscriberByUserId/114
+
+2015-12-10 18:45:36,296 - [INFO] - from application in play-akka.actor.default-dispatcher-145 
+http://localhost:9034/userGroup/getAllUserGroup/114
+
+2015-12-10 18:45:38,300 - [INFO] - from application in play-akka.actor.default-dispatcher-141 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:45:40,471 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+http://localhost:9034/workflow/getWorkflow/id/1
+
+2015-12-10 18:45:44,570 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:45:46,039 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:45:49,964 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+http://localhost:9034/users/110
+
+2015-12-10 18:45:54,308 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
+http://localhost:9034/users/110
+
+2015-12-10 18:45:56,918 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:45:58,714 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:46:07,431 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:46:16,735 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:46:22,575 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+http://localhost:9034/friend/114
+
+2015-12-10 18:46:25,419 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+http://localhost:9034/subscriber/getSubscriberByUserId/114
+
+2015-12-10 18:46:27,355 - [INFO] - from application in play-akka.actor.default-dispatcher-155 
+http://localhost:9034/users/110
+
+2015-12-10 18:46:29,865 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
+http://localhost:9034/users/110
+
+2015-12-10 18:46:31,781 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:46:33,268 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:46:53,452 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+http://localhost:9034/users/getAllUsers/json
+
+2015-12-10 18:46:56,715 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
+http://localhost:9034/users/24
+
+2015-12-10 18:46:58,755 - [INFO] - from application in play-akka.actor.default-dispatcher-162 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:47:00,174 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+http://localhost:9034/workflow/getWorkflow/id/1
+
+2015-12-10 18:47:04,171 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
+http://localhost:9034/workflow/getAllWorkflows/json
+
+2015-12-10 18:47:05,502 - [INFO] - from application in play-akka.actor.default-dispatcher-153 
+http://localhost:9034/workflow/getWorkflow/id/2
+
+2015-12-10 18:47:09,256 - [INFO] - from application in play-akka.actor.default-dispatcher-161 
+http://localhost:9034/userGroup/getAllUserGroup/112
+
+2015-12-10 18:47:17,257 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+http://localhost:9034/userGroup/getAllUserGroup/112
+
+2015-12-10 18:47:20,118 - [INFO] - from application in play-akka.actor.default-dispatcher-167 
+http://localhost:9034/workflow/getAllWorkflows/json
 

@@ -132,7 +132,7 @@ public class SubscriberController extends Controller {
         List<Subscriber> subscriberList = subscriberRepository.findByFromUser_Id(id);
         List<User> userList = new ArrayList<User>();
         for(Subscriber subscriber : subscriberList){
-            userList.add(subscriber.getToUser());
+            userList.add(userRepository.findOne(subscriber.getToUser().getId()));
         }
         String result = new Gson().toJson(userList);
 
@@ -150,7 +150,7 @@ public class SubscriberController extends Controller {
         List<Subscriber> subscriberList = subscriberRepository.findByToUser_Id(id);
         List<User> userList = new ArrayList<User>();
         for(Subscriber subscriber : subscriberList){
-            userList.add(subscriber.getFromUser());
+            userList.add(userRepository.findOne(subscriber.getFromUser().getId()));
         }
         String result = new Gson().toJson(userList);
 

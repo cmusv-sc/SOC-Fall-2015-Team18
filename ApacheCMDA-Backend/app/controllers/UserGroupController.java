@@ -87,8 +87,6 @@ public class UserGroupController extends Controller {
         return ok("UserGroup is deleted: " + id);
     }
 
-
-
     public Result getUserGroup(Long id, String format) {
         if (id == null) {
             System.out.println("UserGroup id is null or empty!");
@@ -131,6 +129,35 @@ public class UserGroupController extends Controller {
             return badRequest("UserGroup not found");
         }
     }
+    public Result isBelongToUserGroup(){
+        JsonNode json = request().body().asJson();
+        if (json == null) {
+            System.out.println("User not found, expecting Json data");
+            return badRequest("User not found, expecting Json data");
+        }
+        Long userId1 = json.path("userId1").asLong();
+        Long userId2 = json.path("userId2").asLong();
+
+        List<BigInteger> userGroupList1 = userGroupRepository.findAllUserGroupId(userId1);
+        List<BigInteger> userGroupList2 = userGroupRepository.findAllUserGroupId(userId2);
+
+        boolean res = false;
+
+        for(BigInteger cur : userGroupList1){
+            if(userGroupList2.contains(cur)){
+                res = true;
+            }
+        }
+
+
+        if(res){
+            return ok("1");
+        }else{
+            return ok("0");
+        }
+
+
+    }
     public Result addUserIntoUserGroup(){
         JsonNode json = request().body().asJson();
         if (json == null) {
@@ -170,6 +197,7 @@ public class UserGroupController extends Controller {
         }
 
     }
+
     public Result getAllUserGroup(Long id, String format){
         if (id == null) {
             System.out.println("User id is null or empty!");
@@ -186,14 +214,11 @@ public class UserGroupController extends Controller {
         List<UserGroup> userGroups = new ArrayList<UserGroup>();
 
         for(BigInteger cur : idList){
-            System.out.println("id related: "+cur);
             userGroups.add(userGroupRepository.findOne(cur.longValue()));
         }
-
         String result = new String();
         result = new Gson().toJson(userGroups);
 
-        System.out.println("result!: "+result);
 
         try{
             return ok(result);

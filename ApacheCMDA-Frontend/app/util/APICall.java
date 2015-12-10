@@ -91,6 +91,7 @@ public class APICall {
 
 	public static JsonNode postAPI(String apiString, JsonNode jsonData) {
 		System.out.println("Replying");
+		System.out.println("API String: "+apiString);
 		Promise<WS.Response> responsePromise = WS.url(apiString).post(jsonData);
 		final Promise<JsonNode> bodyPromise = responsePromise
 				.map(new Function<WS.Response, JsonNode>() {

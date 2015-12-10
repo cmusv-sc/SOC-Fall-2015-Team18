@@ -68,9 +68,13 @@ public class UserController extends Controller {
 		String description = json.path("description").asText();
 
 		try {
-			if (userRepository.findByUserName(userName).size() > 0) {
+			if (userRepository.findByUserName(userName) != null) {
 				System.out.println("UserName has been used: " + userName);
 				return badRequest("UserName has been used");
+			}
+			if (userRepository.findByEmail(email) != null) {
+				System.out.println("Email has been used: " + email);
+				return badRequest("Email has been used");
 			}
 			User user = new User(userName, password, firstName, lastName, affiliation, email, phoneNumber, researchFields, description);
 			userRepository.save(user);
@@ -176,9 +180,8 @@ public class UserController extends Controller {
 			return badRequest("Cannot check user, expecting Json data");
 		}
 		String email = json.path("email").asText();
-		System.out.println("email: " + email);
 		String password = json.path("password").asText();
-		System.out.println("password: " + password);
+
 		try{
 			User user = null;
 			user = userRepository.findByEmail(email);
@@ -190,13 +193,11 @@ public class UserController extends Controller {
 			if (user.getPassword().equals(password)) {
 
 				System.out.println("User is valid");
-				/*
 				ObjectMapper mapper = new ObjectMapper();
 				ObjectNode queryJson = mapper.createObjectNode();
 
 				queryJson.put("userId", user.getId());
-				*/
-				return ok(new Gson().toJson(user.getId()));
+				return ok(queryJson.toString());
 			} else {
 				System.out.println("User is not valid");
 				return badRequest(new Gson().toJson("0"));
@@ -206,16 +207,18 @@ public class UserController extends Controller {
 			System.out.println("User is not valid" );
 			return badRequest(new Gson().toJson("0"));
 		}
+
+
 	}
 	
-	public Result deleteUserByUserNameandPassword(String userName, String password) {
+	public Result deleteUserByUserNameAndPassword(String userName, String password) {
 		try {
-			List<User> users = userRepository.findByUserName(userName);
-			if (users.size()==0) {
+			User user = userRepository.findByUserName(userName);
+			if (user == null) {
 				System.out.println("User is not existed");
 				return badRequest("User is not existed");
 			}
-			User user = users.get(0);
+
 			if (user.getPassword().equals(password)) {
 				System.out.println("User is deleted: "+user.getId());
 				userRepository.delete(user);

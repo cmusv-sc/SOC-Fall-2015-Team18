@@ -101,7 +101,6 @@ public class UserGroup {
         }
     }
 
-
     public static UserGroup getUserGroup(JsonNode json) {
         UserGroup group = new UserGroup();
         group.id = json.get("id").asLong();

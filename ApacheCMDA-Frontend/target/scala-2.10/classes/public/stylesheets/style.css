@@ -37,3 +37,96 @@ table.tablesorter thead tr .headerSortDown {
 table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
 background-color: #8dbdd8;
 }
+
+.pi{width: 80%;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top:1px solid #a7b1b4;border-bottom:1px solid #a7b1b4;border-left:1px solid #a7b1b4;border-right:1px solid #a7b1b4;
+   }
+
+.pcontent{width: 80%;
+		  padding-top: 10px;
+		  padding-right: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 10px;
+          border-top:1px dashed #a7b1b4;border-bottom:1px dashed #a7b1b4;border-left:1px dashed #a7b1b4;border-right:1px dashed #a7b1b4;
+         }
+
+.pcommenttext {
+		  padding-top: 10px;
+		  padding-right: 10px;
+		  padding-bottom: 10px;
+		  padding-left: 10px;
+}
+
+.pcomment{
+		  padding-top: 5px;
+          border-top:1px dotted #a7b1b4;
+         }
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.fontnewroman {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+.newsbox {
+	margin-bottom: 5px;
+	background: url('images/newsbox_bg.jpg') repeat-y;
+	background-size: cover;
+}
+
+.newsbox_header {
+	padding: 19px 1px 5px;
+	background: url('images/newsbox_bg_top.jpg') no-repeat 0% 0%;
+	background-size: cover;
+}
+
+.newsbox_header h2 {
+	padding-left: 20px;
+	width: 330px;
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.newsbox_header strong {
+	float: right;
+}
+
+.newsbox_content {
+	padding: 0px 10px 20px;
+	background: url('images/newsbox_bg_bot.jpg') no-repeat 0% 100%;
+	background-size: cover;
+	line-height: 14px;
+}
+
+.newsbox_comments a {
+	text-decoration: none;
+}
+
+.newsbox_comments a:hover {
+	color: #959595;
+	background-color: inherit;
+}
+
+.clearthis {
+	margin : 0px;
+	height : 1px;
+	clear : both;
+	float : none;
+	font-size: 1px;
+	line-height: 0px;
+	overflow : hidden;
+	visibility: hidden;
+}

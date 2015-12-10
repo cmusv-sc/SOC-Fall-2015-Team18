@@ -83,6 +83,21 @@ public class UserController extends Controller {
         return ok(signIn.render(userForm));
     }
 
+    public static Result signIn() {
+        Form<User> dc = userForm.bindFromRequest();
+        User user = toSignInUser(dc);
+        String id = User.signIn(user);
+        if(id.equals("")) {
+            flash("error", "Email and Password do not match");
+            return ok(signIn.render(userForm));
+        }
+        else {
+            session("userId", id);
+            flash("success", "Successfully Logged In");
+            return ok(home.render(user.email, "", ""));
+        }
+    }
+
     public static Result showFriends() {
         String userID = session().get("userId");
         if(userID!=null && userID.trim().length()!=0) {
@@ -135,20 +150,7 @@ public class UserController extends Controller {
         return ok(oneUser.render(user2, isFriend, false));
     }
 
-    public static Result signIn() {
-        Form<User> dc = userForm.bindFromRequest();
-        User user = toSignInUser(dc);
-        String id = User.signIn(user);
-        if(id.equals("")) {
-            flash("error", "Email and Password do not match");
-            return ok(signIn.render(userForm));
-        }
-        else {
-            session("userId", id);
-            flash("success", "Successfully Logged In");
-            return ok(home.render(user.email, "", ""));
-        }
-    }
+
 
     public static Result signOut() {
         session().clear();

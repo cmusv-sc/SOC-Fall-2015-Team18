@@ -16,13 +16,26 @@
  */
 package models;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
+import java.math.BigInteger;
+import java.util.List;
 
 @Named
 @Singleton
 public interface WorkflowRepository extends CrudRepository<Workflow, Long> {
+    @Query(value = "select u.levelId from WorkflowAndLevel u where (u.workflowId like ?1) ", nativeQuery = true)
+    List<BigInteger> findAllLevelId(Long id);
 
+    List<Workflow> findByUserId(Long userId);
+
+
+    List<Workflow> findTop10ByOrderByViewCountDesc();
+    List <Workflow> findTop10ByOrderByCommentCountDesc();
+    List <Workflow> findTop10ByOrderByUsageCountDesc();
+    List <Workflow> findTop10ByOrderByDownloadCountDesc();
+    List <Workflow> findTop10ByOrderByReferenceCountDesc();
 }
