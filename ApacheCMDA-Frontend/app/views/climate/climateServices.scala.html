@@ -44,7 +44,7 @@
 	</thead>
 	@for(climateService <- climateServices){
 	<tr>
-		<a href = "@{routes.ClimateServiceController.oneService(climateService.getUrl())}"><font size="3">@climateService.getClimateServiceName()</font></a>></td>
+		<td><a href = "@{routes.ClimateServiceController.oneService(climateService.getUrl())}"><font size="3">@climateService.getClimateServiceName()</a></font></td>
 
 		<td><span class="@climateService.getClimateServiceName() editable"  data-name='purpose'><font size="3">
 				@climateService.getPurpose() </font></span></td>

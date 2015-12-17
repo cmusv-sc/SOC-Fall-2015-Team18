@@ -30,7 +30,7 @@
 @flash_message()
 
 <h1 style="margin-left:490px">Create a Workflow</h1>
-@helper.form(routes.WorkflowController.handleCreateWorkflow()) {
+@helper.form(action=routes.WorkflowController.handleCreateWorkflow(), 'enctype -> "multipart/form-data") {
 <div class="ui-widget col-sm-offset-3 col-sm-7">
     <div class="form-group">
         @inputText(
@@ -49,7 +49,7 @@
         )
     </div>
     <div class="form-group">
-        @inputText(
+        @inputFile(
         workflowForm("Image"),
         'class -> "form-control",
         'size->70,

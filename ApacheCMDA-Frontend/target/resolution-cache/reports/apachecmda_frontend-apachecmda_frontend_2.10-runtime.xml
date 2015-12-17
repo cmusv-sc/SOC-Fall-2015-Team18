@@ -7,10 +7,10 @@
 		revision="1.0-SNAPSHOT"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
-		date="20151210175916"/>
+		date="20151211083954"/>
 	<dependencies>
 		<module organisation="com.amazonaws" name="aws-java-sdk">
-			<revision name="1.7.6" status="release" pubdate="20140417004404" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="72">
+			<revision name="1.7.6" status="release" pubdate="20140417004404" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://aws.amazon.com/sdkforjava" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="67">
 				<license name="Apache License, Version 2.0" url="https://aws.amazon.com/apache2.0"/>
 				<metadata-artifact status="no" details="" size="5226" time="0" location="/root/.ivy2/cache/com.amazonaws/aws-java-sdk/ivy-1.7.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk/1.7.6/aws-java-sdk-1.7.6.pom"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="1.0-SNAPSHOT"/>
@@ -22,14 +22,14 @@
 			</revision>
 		</module>
 		<module organisation="joda-time" name="joda-time">
-			<revision name="2.9.1" status="release" pubdate="20151112120326" resolver="public" artresolver="public" homepage="http://www.joda.org/joda-time/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="76">
+			<revision name="2.9.1" status="release" pubdate="20151112120326" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="71">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="29417" time="64" location="/root/.ivy2/cache/joda-time/joda-time/ivy-2.9.1.xml" searched="true" original-local-location="/root/.ivy2/cache/joda-time/joda-time/ivy-2.9.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom"/>
+				<metadata-artifact status="no" details="" size="6457" time="0" location="/root/.ivy2/cache/joda-time/joda-time/ivy-2.9.1.xml" searched="true" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom"/>
 				<caller organisation="com.typesafe.play" name="play-json_2.10" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.2.3"/>
 				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="[2.2,)" rev-constraint-default="[2.2,)" rev-constraint-dynamic="[2.2,)" callerrev="1.7.6"/>
 				<caller organisation="com.typesafe.play" name="play_2.10" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.2.3"/>
 				<artifacts>
-					<artifact name="joda-time" type="jar" ext="jar" status="successful" details="" size="625986" time="83" location="/root/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.1.jar">
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="625986" time="0" location="/root/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.1.jar">
 						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -45,7 +45,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
-			<revision name="4.2" status="release" pubdate="20120517122639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="73">
+			<revision name="4.2" status="release" pubdate="20120517122639" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="68">
 				<metadata-artifact status="no" details="" size="9229" time="0" location="/root/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.2/httpclient-4.2.pom"/>
 				<caller organisation="oauth.signpost" name="signpost-commonshttp4" conf="compile, runtime" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.2.1.2"/>
 				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="default, compile, runtime, master" rev="4.2" rev-constraint-default="4.2" rev-constraint-dynamic="4.2" callerrev="1.7.6"/>
@@ -65,7 +65,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.6" status="release" pubdate="20111203023826" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="75">
+			<revision name="1.6" status="release" pubdate="20111203023826" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="70">
 				<metadata-artifact status="no" details="" size="7555" time="0" location="/root/.ivy2/cache/commons-codec/commons-codec/ivy-1.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="4.2"/>
 				<caller organisation="com.amazonaws" name="aws-java-sdk" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.3" callerrev="1.7.6"/>
@@ -90,7 +90,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
-			<revision name="4.2" status="release" pubdate="20120501122135" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="74">
+			<revision name="4.2" status="release" pubdate="20120501122135" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="69">
 				<metadata-artifact status="no" details="" size="6600" time="0" location="/root/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.2/httpcore-4.2.pom"/>
 				<caller organisation="oauth.signpost" name="signpost-commonshttp4" conf="compile, runtime" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.2.1.2"/>
 				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.2" rev-constraint-default="4.2" rev-constraint-dynamic="4.2" callerrev="4.2"/>
@@ -112,7 +112,7 @@
 			</revision>
 		</module>
 		<module organisation="com.google.code.gson" name="gson">
-			<revision name="2.2.2" status="release" pubdate="20120703010157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="71">
+			<revision name="2.2.2" status="release" pubdate="20120703010157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="66">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3253" time="0" location="/root/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.2/gson-2.2.2.pom"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="1.0-SNAPSHOT"/>
@@ -124,7 +124,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-entitymanager">
-			<revision name="3.6.9.Final" status="release" pubdate="20111215062416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="63">
+			<revision name="3.6.9.Final" status="release" pubdate="20111215062416" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="58">
 				<metadata-artifact status="no" details="" size="8423" time="0" location="/root/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-3.6.9.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/3.6.9.Final/hibernate-entitymanager-3.6.9.Final.pom"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="3.6.9.Final" rev-constraint-default="3.6.9.Final" rev-constraint-dynamic="3.6.9.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -135,7 +135,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-core">
-			<revision name="3.6.9.Final" status="release" pubdate="20111215061749" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="64">
+			<revision name="3.6.9.Final" status="release" pubdate="20111215061749" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="59">
 				<metadata-artifact status="no" details="" size="9558" time="0" location="/root/.ivy2/cache/org.hibernate/hibernate-core/ivy-3.6.9.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-core/3.6.9.Final/hibernate-core-3.6.9.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="3.6.9.Final" rev-constraint-default="3.6.9.Final" rev-constraint-dynamic="3.6.9.Final" callerrev="3.6.9.Final"/>
 				<artifacts>
@@ -146,7 +146,7 @@
 			</revision>
 		</module>
 		<module organisation="cglib" name="cglib">
-			<revision name="2.2" status="release" pubdate="20081028020139" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="68">
+			<revision name="2.2" status="release" pubdate="20081028020139" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cglib.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="63">
 				<license name="ASF 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2638" time="0" location="/root/.ivy2/cache/cglib/cglib/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/cglib/cglib/2.2/cglib-2.2.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="3.6.9.Final"/>
@@ -158,7 +158,7 @@
 			</revision>
 		</module>
 		<module organisation="asm" name="asm">
-			<revision name="3.1" status="release" pubdate="20080120103126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="69">
+			<revision name="3.1" status="release" pubdate="20080120103126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="64">
 				<metadata-artifact status="no" details="" size="2800" time="0" location="/root/.ivy2/cache/asm/asm/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
 				<caller organisation="cglib" name="cglib" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.2"/>
 				<artifacts>
@@ -169,7 +169,7 @@
 			</revision>
 		</module>
 		<module organisation="javassist" name="javassist">
-			<revision name="3.12.0.GA" status="release" pubdate="20101123072131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="70">
+			<revision name="3.12.0.GA" status="release" pubdate="20101123072131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="65">
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<metadata-artifact status="no" details="" size="2757" time="0" location="/root/.ivy2/cache/javassist/javassist/ivy-3.12.0.GA.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="3.12.0.GA" rev-constraint-default="3.12.0.GA" rev-constraint-dynamic="3.12.0.GA" callerrev="3.6.9.Final"/>
@@ -181,7 +181,7 @@
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-commons-annotations">
-			<revision name="3.2.0.Final" status="release" pubdate="20100309164153" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="67">
+			<revision name="3.2.0.Final" status="release" pubdate="20100309164153" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="62">
 				<license name="GNU LESSER GENERAL PUBLIC LICENSE" url="http://www.gnu.org/licenses/lgpl.txt"/>
 				<metadata-artifact status="no" details="" size="3552" time="0" location="/root/.ivy2/cache/org.hibernate/hibernate-commons-annotations/ivy-3.2.0.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="3.2.0.Final" rev-constraint-default="3.2.0.Final" rev-constraint-dynamic="3.2.0.Final" callerrev="3.6.9.Final"/>
@@ -193,7 +193,7 @@
 			</revision>
 		</module>
 		<module organisation="commons-collections" name="commons-collections">
-			<revision name="3.1" status="release" pubdate="20051108223131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="66">
+			<revision name="3.1" status="release" pubdate="20051108223131" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="61">
 				<metadata-artifact status="no" details="" size="2499" time="0" location="/root/.ivy2/cache/commons-collections/commons-collections/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="3.6.9.Final"/>
 				<artifacts>
@@ -204,7 +204,7 @@
 			</revision>
 		</module>
 		<module organisation="antlr" name="antlr">
-			<revision name="2.7.6" status="release" pubdate="20060131013534" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="65">
+			<revision name="2.7.6" status="release" pubdate="20060131013534" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="60">
 				<metadata-artifact status="no" details="" size="2197" time="0" location="/root/.ivy2/cache/antlr/antlr/ivy-2.7.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="3.6.9.Final"/>
 				<artifacts>
@@ -214,31 +214,8 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="com.typesafe.play" name="play-cache_2.10">
-			<revision name="2.2.3" status="release" pubdate="20150421151300" resolver="typesafe-releases" artresolver="typesafe-releases" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="61">
-				<metadata-artifact status="successful" details="" size="1682" time="1018" location="/root/.ivy2/cache/com.typesafe.play/play-cache_2.10/ivy-2.2.3.xml" searched="true" original-local-location="/root/.ivy2/cache/com.typesafe.play/play-cache_2.10/ivy-2.2.3.xml.original" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom"/>
-				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="play-cache_2.10" type="jar" ext="jar" status="successful" details="" size="35156" time="1120" location="/root/.ivy2/cache/com.typesafe.play/play-cache_2.10/jars/play-cache_2.10-2.2.3.jar">
-						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="net.sf.ehcache" name="ehcache-core">
-			<revision name="2.6.6" status="release" pubdate="20130507183745" resolver="public" artresolver="public" homepage="http://ehcache.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="62">
-				<license name="The Apache Software License, Version 2.0" url="src/assemble/EHCACHE-CORE-LICENSE.txt"/>
-				<metadata-artifact status="successful" details="" size="30071" time="69" location="/root/.ivy2/cache/net.sf.ehcache/ehcache-core/ivy-2.6.6.xml" searched="true" original-local-location="/root/.ivy2/cache/net.sf.ehcache/ehcache-core/ivy-2.6.6.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom"/>
-				<caller organisation="com.typesafe.play" name="play-cache_2.10" conf="default, compile, runtime, master" rev="2.6.6" rev-constraint-default="2.6.6" rev-constraint-dynamic="2.6.6" callerrev="2.2.3"/>
-				<artifacts>
-					<artifact name="ehcache-core" type="jar" ext="jar" status="successful" details="" size="1346296" time="129" location="/root/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.6.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.typesafe.play" name="play-java-jpa_2.10">
-			<revision name="2.2.3" status="release" pubdate="20150421163520" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="60">
+			<revision name="2.2.3" status="release" pubdate="20150421163520" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="56">
 				<metadata-artifact status="no" details="" size="2598" time="0" location="/root/.ivy2/cache/com.typesafe.play/play-java-jpa_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jpa_2.10/2.2.3/play-java-jpa_2.10-2.2.3.pom"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
@@ -248,22 +225,10 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="com.typesafe.play" name="play-java-ebean_2.10">
-			<revision name="2.2.3" status="release" pubdate="20150421151509" resolver="typesafe-releases" artresolver="typesafe-releases" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="56">
-				<metadata-artifact status="successful" details="" size="2145" time="1078" location="/root/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/ivy-2.2.3.xml" searched="true" original-local-location="/root/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/ivy-2.2.3.xml.original" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom"/>
-				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
-				<artifacts>
-					<artifact name="play-java-ebean_2.10" type="jar" ext="jar" status="successful" details="" size="12641" time="1101" location="/root/.ivy2/cache/com.typesafe.play/play-java-ebean_2.10/jars/play-java-ebean_2.10-2.2.3.jar">
-						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.hibernate.javax.persistence" name="hibernate-jpa-2.0-api">
-			<revision name="1.0.1.Final" status="release" pubdate="20110615024226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="59">
+			<revision name="1.0.1.Final" status="release" pubdate="20110615024226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="57">
 				<license name="Unknown License" url="license.txt"/>
 				<metadata-artifact status="no" details="" size="2465" time="0" location="/root/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/ivy-1.0.1.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.pom"/>
-				<caller organisation="com.typesafe.play" name="play-java-ebean_2.10" conf="default, compile, runtime, master" rev="1.0.1.Final" rev-constraint-default="1.0.1.Final" rev-constraint-dynamic="1.0.1.Final" callerrev="2.2.3"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.0.1.Final" rev-constraint-default="1.0.1.Final" rev-constraint-dynamic="1.0.1.Final" callerrev="3.6.9.Final"/>
 				<caller organisation="com.typesafe.play" name="play-java-jpa_2.10" conf="default, compile, runtime, master" rev="1.0.1.Final" rev-constraint-default="1.0.1.Final" rev-constraint-dynamic="1.0.1.Final" callerrev="2.2.3"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.0.1.Final" rev-constraint-default="1.0.1.Final" rev-constraint-dynamic="1.0.1.Final" callerrev="3.6.9.Final"/>
@@ -274,34 +239,9 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm">
-			<revision name="3.2.2" status="release" pubdate="20130712091342" resolver="public" artresolver="public" homepage="http://www.avaje.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="57">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5652" time="127" location="/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.2.2.xml" searched="true" original-local-location="/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/ivy-3.2.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom"/>
-				<caller organisation="com.typesafe.play" name="play-java-ebean_2.10" conf="default, compile, runtime, master" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="2.2.3"/>
-				<artifacts>
-					<artifact name="avaje-ebeanorm" type="jar" ext="jar" status="successful" details="" size="1582101" time="339" location="/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.2.2.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.avaje.ebeanorm" name="avaje-ebeanorm-agent">
-			<revision name="3.2.1" status="release" pubdate="20130418105719" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.avaje.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="58">
-				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="4607" time="0" location="/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/3.2.1/avaje-ebeanorm-agent-3.2.1.pom"/>
-				<caller organisation="com.typesafe.play" name="play-java-ebean_2.10" conf="default, compile, runtime, master" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="2.2.3"/>
-				<artifacts>
-					<artifact name="avaje-ebeanorm-agent" type="jar" ext="jar" status="no" details="" size="182383" time="0" location="/root/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.1.jar">
-						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/3.2.1/avaje-ebeanorm-agent-3.2.1.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="com.typesafe.play" name="play-java-jdbc_2.10">
 			<revision name="2.2.3" status="release" pubdate="20150421155203" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="1">
 				<metadata-artifact status="no" details="" size="2710" time="0" location="/root/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-jdbc_2.10/2.2.3/play-java-jdbc_2.10-2.2.3.pom"/>
-				<caller organisation="com.typesafe.play" name="play-java-ebean_2.10" conf="default, compile, runtime, master" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.typesafe.play" name="play-java-jpa_2.10" conf="default, compile, runtime, master" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<artifacts>
@@ -516,7 +456,6 @@
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<caller organisation="apachecmda_frontend" name="apachecmda_frontend_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
 				<caller organisation="com.typesafe.play" name="play-java_2.10" conf="compile, runtime" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
-				<caller organisation="com.typesafe.play" name="play-cache_2.10" conf="default, compile, runtime, master" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="2.2.3"/>
 				<artifacts>
 					<artifact name="play_2.10" type="jar" ext="jar" status="no" details="" size="3800490" time="0" location="/root/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.3.jar">
 						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play_2.10/2.2.3/play_2.10-2.2.3.jar"/>
@@ -697,7 +636,6 @@
 				<caller organisation="ch.qos.logback" name="logback-classic" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0.13"/>
 				<caller organisation="org.slf4j" name="jul-to-slf4j" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.10" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
-				<caller organisation="net.sf.ehcache" name="ehcache-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="2.6.6"/>
 				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.18"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.6.9.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-commons-annotations" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.5.8" callerrev="3.2.0.Final"/>
@@ -711,7 +649,6 @@
 			</revision>
 			<revision name="1.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
 				<evicted-by rev="1.7.5"/>
-				<caller organisation="net.sf.ehcache" name="ehcache-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="2.6.6"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.6.9.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-commons-annotations" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.5.8" callerrev="3.2.0.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.6.9.Final"/>

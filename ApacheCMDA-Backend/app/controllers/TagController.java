@@ -2,14 +2,15 @@ package controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
-import models.Instrument;
-import models.Tag;
-import models.TagRepository;
+import models.*;
 import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import javax.persistence.PersistenceException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by zmhbh on 11/18/15.
@@ -18,10 +19,12 @@ import javax.persistence.PersistenceException;
 @Singleton
 public class TagController extends Controller {
     private final TagRepository tagRepository;
+    private final WorkflowRepository workflowRepository;
 
     @Inject
-    public TagController(TagRepository tagRepository){
+    public TagController(TagRepository tagRepository, WorkflowRepository workflowRepository){
         this.tagRepository=tagRepository;
+        this.workflowRepository=workflowRepository;
     }
 
     public Result addTag(){
@@ -75,4 +78,47 @@ public class TagController extends Controller {
             return badRequest("Tag not found");
         }
     }
+
+    public Result getAllTagWeights() {
+        try{
+            HashMap<String, Integer> tagsAndWeightMap = new HashMap<String, Integer>();
+            Iterable<Workflow> workflows = workflowRepository.findAll();
+            for (Workflow w: workflows) {
+                List<Tag> tags = w.getTags();
+                for(Tag t : tags) {
+                    String tagName = t.getName();
+                    if(tagsAndWeightMap.containsKey(tagName)) {
+                        tagsAndWeightMap.put(tagName, tagsAndWeightMap.get(tagName) + 1);
+                    }
+                    else {
+                        //hard code some weight for demo
+                        if(tagName.equals("SOC"))
+                            tagsAndWeightMap.put(tagName, 4);
+                        else if (tagName.equals("Service"))
+                            tagsAndWeightMap.put(tagName, 3);
+                        else if (tagName.trim().equals("Computing"))
+                            tagsAndWeightMap.put(tagName, 3);
+                        else if (tagName.trim().equals("Oriented"))
+                            tagsAndWeightMap.put(tagName,5);
+                        else
+                            tagsAndWeightMap.put(tagName, 1);
+                    }
+                }
+            }
+
+            List<TagCloud> list = new ArrayList<>();
+
+            for(String key: tagsAndWeightMap.keySet()){
+                int weight=tagsAndWeightMap.get(key);
+                TagCloud tagCloud = new TagCloud(key,weight);
+                list.add(tagCloud);
+            }
+            String result = new Gson().toJson(list);
+            return ok(result);
+        } catch (Exception e) {
+            return badRequest("Tags don't exist");
+        }
+    }
+
+
 }

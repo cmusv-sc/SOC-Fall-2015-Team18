@@ -1,3 +1,20 @@
-11-05 23:09:53 jdbc[5]: exception
-org.h2.jdbc.JdbcSQLException: Table "PLAY_EVOLUTIONS" not found; SQL statement:
-select id, hash, apply_script, revert_script, state, last_problem from play_evolutions where state like 'applying_%' [42102-172]
+12-10 17:29:48 database: close
+org.h2.message.DbException: IO Exception: "java.io.EOFException"; "/Users/Holysoul/Desktop/SOC-Fall-2015-Team17-Lead-Runyu-Shi/ApacheCMDA-Frontend/data/db.h2.db" [90031-172]
+	at org.h2.message.DbException.get(DbException.java:158)
+	at org.h2.message.DbException.convertIOException(DbException.java:315)
+	at org.h2.store.FileStore.readFully(FileStore.java:268)
+	at org.h2.store.PageStore.readPage(PageStore.java:1288)
+	at org.h2.store.PageStore.getPage(PageStore.java:735)
+	at org.h2.store.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:250)
+	at org.h2.store.PageLog.free(PageLog.java:209)
+	at org.h2.store.PageStore.compact(PageStore.java:491)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1214)
+	at org.h2.engine.Database.close(Database.java:1164)
+	at org.h2.engine.DatabaseCloser.run(DatabaseCloser.java:64)
+Caused by: org.h2.jdbc.JdbcSQLException: IO Exception: "java.io.EOFException"; "/Users/Holysoul/Desktop/SOC-Fall-2015-Team17-Lead-Runyu-Shi/ApacheCMDA-Frontend/data/db.h2.db" [90031-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	... 11 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:343)
+	at org.h2.store.FileStore.readFully(FileStore.java:266)
+	... 8 more

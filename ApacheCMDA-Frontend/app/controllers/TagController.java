@@ -21,9 +21,7 @@ import models.metadata.Tag;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.climate.home;
-import views.html.climate.tags;
-import views.html.climate.oneService;
+import views.html.climate.*;
 
 
 public class TagController extends Controller {
@@ -38,6 +36,10 @@ public class TagController extends Controller {
 
     public static Result tags() {
         return ok(tags.render(Tag.all(), tagForm));
+    }
+	
+    public static Result tagCloud() {
+        return ok(tagCloud.render());
     }
 
 /*
@@ -124,7 +126,7 @@ public class TagController extends Controller {
 */
 
     public static Result oneService(String url) {
-		return ok(oneService.render("/assets/html/" + url));
+        return ok(oneService.render("/assets/html/" + url));
     }
 
 

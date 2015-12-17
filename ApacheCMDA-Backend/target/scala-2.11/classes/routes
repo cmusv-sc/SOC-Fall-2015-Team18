@@ -88,28 +88,31 @@ GET           /workflow/getWorkflowByUserId/:id                                 
 
 
 
+
 #Popularity
-GET            /workflow/getViewCount/:id                                                               @controllers.WorkflowController.getWorkflowViewCount(id: Long, format: String= "json")
-GET            /workflow/updateViewCount/:id                                                            @controllers.WorkflowController.updateWorkflowViewCount(id: Long, format: String= "json")
+GET            /workflow/getViewCount/:id                                                              @controllers.WorkflowController.getWorkflowViewCount(id: Long, format: String= "json")
+GET            /workflow/updateViewCount/:id                                                        @controllers.WorkflowController.updateWorkflowViewCount(id: Long, format: String= "json")
 GET            /workflow/getUsageCount/:id                                                              @controllers.WorkflowController.getWorkflowUsageCount(id: Long, format: String= "json")
 PUT            /workflow/updateUsageCount/id/:id                                                        @controllers.WorkflowController.updateWorkflowUsageCount(id: Long)
-GET            /workflow/getDownloadCount/:id                                                           @controllers.WorkflowController.getWorkflowDownloadCount(id: Long, format: String= "json")
-PUT            /workflow/updateDownloadCount/id/:id                                                     @controllers.WorkflowController.updateWorkflowDownloadCount(id: Long)
-GET            /workflow/getCommentCount/:id                                                            @controllers.WorkflowController.getWorkflowCommentCount(id: Long, format: String= "json")
-PUT            /workflow/updateCommentCount/id/:id                                                      @controllers.WorkflowController.updateWorkflowCommentCount(id: Long)
-GET            /workflow/getReferenceCount/:id                                                          @controllers.WorkflowController.getWorkflowReferenceCount(id: Long, format: String= "json")
-PUT            /workflow/updateReferenceCount/id/:id                                                    @controllers.WorkflowController.updateWorkflowReferenceCount(id: Long)
-GET            /workflow/getTop10WorkflowByViewCount/json                                               @controllers.WorkflowController.getTop10WorkflowByViewCount(format: String = "json")
-GET            /workflow/getTop10WorkflowByUsageCount/json                                              @controllers.WorkflowController.getTop10WorkflowByUsageCount(format: String = "json")
-GET            /workflow/getTop10WorkflowByCommentCount/json                                            @controllers.WorkflowController.getTop10WorkflowByCommentCount(format: String = "json")
-GET            /workflow/getTop10WorkflowByDownloadCount/json                                           @controllers.WorkflowController.getTop10WorkflowByDownloadCount(format: String = "json")
-GET            /workflow/getTop10WorkflowByReferenceCount/json                                          @controllers.WorkflowController.getTop10WorkflowByReferenceCount(format: String = "json")
-
+GET            /workflow/getDownloadCount/:id                                                              @controllers.WorkflowController.getWorkflowDownloadCount(id: Long, format: String= "json")
+PUT            /workflow/updateDownloadCount/id/:id                                                        @controllers.WorkflowController.updateWorkflowDownloadCount(id: Long)
+GET            /workflow/getCommentCount/:id                                                              @controllers.WorkflowController.getWorkflowCommentCount(id: Long, format: String= "json")
+PUT            /workflow/updateCommentCount/id/:id                                                        @controllers.WorkflowController.updateWorkflowCommentCount(id: Long)
+GET            /workflow/getReferenceCount/:id                                                              @controllers.WorkflowController.getWorkflowReferenceCount(id: Long, format: String= "json")
+PUT            /workflow/updateReferenceCount/id/:id                                                        @controllers.WorkflowController.updateWorkflowReferenceCount(id: Long)
+GET            /workflow/getTop10WorkflowByViewCount/json                                                  @controllers.WorkflowController.getTop10WorkflowByViewCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByUsageCount/json                                                  @controllers.WorkflowController.getTop10WorkflowByUsageCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByCommentCount/json                                                  @controllers.WorkflowController.getTop10WorkflowByCommentCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByDownloadCount/json                                                  @controllers.WorkflowController.getTop10WorkflowByDownloadCount(format: String = "json")
+GET            /workflow/getTop10WorkflowByReferenceCount/json                                                  @controllers.WorkflowController.getTop10WorkflowByReferenceCount(format: String = "json")
 
 #Tag
 GET           /tag/getAllTags/json                                                                      @controllers.TagController.getAllTags(format: String="json")
 GET           /tag/getTag/id/:id/json                                                                   @controllers.TagController.getTag(id: Long, format: String="json")
 POST          /tag/addTag                                                                               @controllers.TagController.addTag
+GET           /tag/getAllTagWeights/json                                                                @controllers.TagController.getAllTagWeights
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET           /assets/*file                                                                             controllers.Assets.at(path="/public", file)

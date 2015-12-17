@@ -1,168 +1,112 @@
-2015-12-10 17:59:41,175 - [INFO] - from play in pool-4-thread-3 
+2015-12-17 23:06:25,330 - [INFO] - from play in pool-4-thread-3 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-12-10 18:00:00,874 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-17 23:07:33,771 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-12-10 18:00:01,320 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-17 23:07:34,133 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-12-10 18:00:06,237 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-17 23:07:37,179 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-12-10 18:00:43,802 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:01:51,513 - [INFO] - from application in play-akka.actor.default-dispatcher-13 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:02:10,302 - [INFO] - from application in play-akka.actor.default-dispatcher-20 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:12:35,261 - [INFO] - from application in play-akka.actor.default-dispatcher-45 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:12:59,480 - [INFO] - from application in play-akka.actor.default-dispatcher-59 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:17:24,568 - [INFO] - from application in play-akka.actor.default-dispatcher-69 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:38:18,372 - [INFO] - from application in play-akka.actor.default-dispatcher-95 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:38:20,927 - [INFO] - from application in play-akka.actor.default-dispatcher-96 
-http://localhost:9034/workflow/getWorkflow/id/1
-
-2015-12-10 18:38:24,848 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
-http://localhost:9034/users/113
-
-2015-12-10 18:38:28,070 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
-http://localhost:9034/friend/113
-
-2015-12-10 18:38:32,445 - [INFO] - from application in play-akka.actor.default-dispatcher-92 
-http://localhost:9034/subscriber/getSubscriberByUserId/113
-
-2015-12-10 18:38:34,960 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
-http://localhost:9034/userGroup/getAllUserGroup/113
-
-2015-12-10 18:38:39,466 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:38:41,166 - [INFO] - from application in play-akka.actor.default-dispatcher-102 
-http://localhost:9034/workflow/getWorkflow/id/1
-
-2015-12-10 18:39:07,374 - [INFO] - from application in play-akka.actor.default-dispatcher-102 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:39:09,384 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:39:17,565 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:39:26,020 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:39:30,336 - [INFO] - from application in play-akka.actor.default-dispatcher-91 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:39:31,915 - [INFO] - from application in play-akka.actor.default-dispatcher-105 
-http://localhost:9034/workflow/getWorkflow/id/1
-
-2015-12-10 18:43:21,583 - [INFO] - from application in play-akka.actor.default-dispatcher-105 
+2015-12-17 23:11:45,028 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
 http://localhost:9034/climateService/getAllClimateServices/json
 
-2015-12-10 18:43:29,271 - [INFO] - from application in play-akka.actor.default-dispatcher-120 
-http://localhost:9034/friend/110
+2015-12-17 23:14:09,026 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+http://localhost:9034/climateService/getAllClimateServices/json
 
-2015-12-10 18:43:39,358 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
-http://localhost:9034/users/110
+2015-12-17 23:25:43,685 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
+http://localhost:9034/workflow/getTop10WorkflowByViewCount/json
 
-2015-12-10 18:45:27,805 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
-http://localhost:9034/users/114
-
-2015-12-10 18:45:31,245 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
-http://localhost:9034/friend/114
-
-2015-12-10 18:45:33,954 - [INFO] - from application in play-akka.actor.default-dispatcher-145 
-http://localhost:9034/subscriber/getSubscriberByUserId/114
-
-2015-12-10 18:45:36,296 - [INFO] - from application in play-akka.actor.default-dispatcher-145 
-http://localhost:9034/userGroup/getAllUserGroup/114
-
-2015-12-10 18:45:38,300 - [INFO] - from application in play-akka.actor.default-dispatcher-141 
+2015-12-17 23:25:46,432 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
 http://localhost:9034/workflow/getAllWorkflows/json
 
-2015-12-10 18:45:40,471 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+2015-12-17 23:25:48,578 - [INFO] - from application in play-akka.actor.default-dispatcher-26 
 http://localhost:9034/workflow/getWorkflow/id/1
 
-2015-12-10 18:45:44,570 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
+2015-12-17 23:25:48,823 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-12-17 23:25:48,855 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6of2opg55 - Internal server error, for (GET) [/workflow/disWorkflow?id=1] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at models.metadata.Workflow.getWorkflow(Workflow.java:361) ~[na:na]
+	at controllers.WorkflowController.displayWorkflow(WorkflowController.java:167) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$26$$anonfun$apply$26.apply(routes_routing.scala:461) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$26$$anonfun$apply$26.apply(routes_routing.scala:461) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-12-17 23:26:15,315 - [INFO] - from application in play-akka.actor.default-dispatcher-22 
 http://localhost:9034/workflow/getAllWorkflows/json
 
-2015-12-10 18:45:46,039 - [INFO] - from application in play-akka.actor.default-dispatcher-144 
-http://localhost:9034/workflow/getWorkflow/id/2
+2015-12-17 23:26:16,746 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+http://localhost:9034/workflow/getWorkflow/id/1
 
-2015-12-10 18:45:49,964 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
-http://localhost:9034/users/110
+2015-12-17 23:26:16,813 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+http://localhost:9034/workflow/updateViewCount/1
 
-2015-12-10 18:45:54,308 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
-http://localhost:9034/users/110
-
-2015-12-10 18:45:56,918 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:45:58,714 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:46:07,431 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:46:16,735 - [INFO] - from application in play-akka.actor.default-dispatcher-149 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:46:22,575 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
-http://localhost:9034/friend/114
-
-2015-12-10 18:46:25,419 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
-http://localhost:9034/subscriber/getSubscriberByUserId/114
-
-2015-12-10 18:46:27,355 - [INFO] - from application in play-akka.actor.default-dispatcher-155 
-http://localhost:9034/users/110
-
-2015-12-10 18:46:29,865 - [INFO] - from application in play-akka.actor.default-dispatcher-127 
-http://localhost:9034/users/110
-
-2015-12-10 18:46:31,781 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
-http://localhost:9034/workflow/getAllWorkflows/json
-
-2015-12-10 18:46:33,268 - [INFO] - from application in play-akka.actor.default-dispatcher-138 
-http://localhost:9034/workflow/getWorkflow/id/2
-
-2015-12-10 18:46:53,452 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+2015-12-17 23:27:51,679 - [INFO] - from application in play-akka.actor.default-dispatcher-42 
 http://localhost:9034/users/getAllUsers/json
 
-2015-12-10 18:46:56,715 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
-http://localhost:9034/users/24
-
-2015-12-10 18:46:58,755 - [INFO] - from application in play-akka.actor.default-dispatcher-162 
+2015-12-17 23:28:23,032 - [INFO] - from application in play-akka.actor.default-dispatcher-37 
 http://localhost:9034/workflow/getAllWorkflows/json
 
-2015-12-10 18:47:00,174 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
+2015-12-17 23:28:24,728 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
 http://localhost:9034/workflow/getWorkflow/id/1
 
-2015-12-10 18:47:04,171 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
+2015-12-17 23:28:24,931 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+http://localhost:9034/workflow/updateViewCount/1
+
+2015-12-17 23:32:51,708 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
+http://localhost:9034/users/getAllUsers/json
+
+2015-12-17 23:33:13,036 - [INFO] - from application in play-akka.actor.default-dispatcher-66 
 http://localhost:9034/workflow/getAllWorkflows/json
 
-2015-12-10 18:47:05,502 - [INFO] - from application in play-akka.actor.default-dispatcher-153 
+2015-12-17 23:33:49,504 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
 http://localhost:9034/workflow/getWorkflow/id/2
 
-2015-12-10 18:47:09,256 - [INFO] - from application in play-akka.actor.default-dispatcher-161 
-http://localhost:9034/userGroup/getAllUserGroup/112
-
-2015-12-10 18:47:17,257 - [INFO] - from application in play-akka.actor.default-dispatcher-150 
-http://localhost:9034/userGroup/getAllUserGroup/112
-
-2015-12-10 18:47:20,118 - [INFO] - from application in play-akka.actor.default-dispatcher-167 
-http://localhost:9034/workflow/getAllWorkflows/json
+2015-12-17 23:33:49,562 - [INFO] - from application in play-akka.actor.default-dispatcher-62 
+http://localhost:9034/workflow/updateViewCount/2
 

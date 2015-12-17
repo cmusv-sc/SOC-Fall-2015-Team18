@@ -20,138 +20,144 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /*******************************************************************************
- * Licensed to the Apache Software Foundation (ASF) under one or more		   *
- * contributor license agreements.  See the NOTICE file distributed with	   *
- * this work for additional information regarding copyright ownership.         *
- * The ASF licenses this file to You under the Apache License, Version 2.0     *
- * (the "License"); you may not use this file except in compliance with        *
- * the License.  You may obtain a copy of the License at                       *
- *                                                                             *
- *    http://www.apache.org/licenses/LICENSE-2.0                               *
- *																			   *
- * Unless required by applicable law or agreed to in writing, software         *
- * distributed under the License is distributed on an "AS IS" BASIS,           *
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
- * See the License for the specific language governing permissions and         *
- * limitations under the License.											   *
- *******************************************************************************/
+* Licensed to the Apache Software Foundation (ASF) under one or more           *
+* contributor license agreements.  See the NOTICE file distributed with       *
+* this work for additional information regarding copyright ownership.         *
+* The ASF licenses this file to You under the Apache License, Version 2.0     *
+* (the "License"); you may not use this file except in compliance with        *
+* the License.  You may obtain a copy of the License at                       *
+*                                                                             *
+*    http://www.apache.org/licenses/LICENSE-2.0                               *
+*                                                                               *
+* Unless required by applicable law or agreed to in writing, software         *
+* distributed under the License is distributed on an "AS IS" BASIS,           *
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
+* See the License for the specific language governing permissions and         *
+* limitations under the License.                                               *
+*******************************************************************************/
 object header extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template0[play.api.templates.HtmlFormat.Appendable] {
 
     /*******************************************************************************
- * Licensed to the Apache Software Foundation (ASF) under one or more		   *
- * contributor license agreements.  See the NOTICE file distributed with	   *
- * this work for additional information regarding copyright ownership.         *
- * The ASF licenses this file to You under the Apache License, Version 2.0     *
- * (the "License"); you may not use this file except in compliance with        *
- * the License.  You may obtain a copy of the License at                       *
- *                                                                             *
- *    http://www.apache.org/licenses/LICENSE-2.0                               *
- *																			   *
- * Unless required by applicable law or agreed to in writing, software         *
- * distributed under the License is distributed on an "AS IS" BASIS,           *
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
- * See the License for the specific language governing permissions and         *
- * limitations under the License.											   *
- *******************************************************************************/
+* Licensed to the Apache Software Foundation (ASF) under one or more           *
+* contributor license agreements.  See the NOTICE file distributed with       *
+* this work for additional information regarding copyright ownership.         *
+* The ASF licenses this file to You under the Apache License, Version 2.0     *
+* (the "License"); you may not use this file except in compliance with        *
+* the License.  You may obtain a copy of the License at                       *
+*                                                                             *
+*    http://www.apache.org/licenses/LICENSE-2.0                               *
+*                                                                               *
+* Unless required by applicable law or agreed to in writing, software         *
+* distributed under the License is distributed on an "AS IS" BASIS,           *
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
+* See the License for the specific language governing permissions and         *
+* limitations under the License.                                               *
+*******************************************************************************/
     def apply/*18.2*/():play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
 Seq[Any](format.raw/*18.4*/("""
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" style="padding-bottom: 0;" href="/climate"><img
-					src='"""),_display_(Seq[Any](/*29.12*/routes/*29.18*/.Assets.at("images/NASA_JPL_logo.png"))),format.raw/*29.56*/("""' style="height: 40px; width: 220px;">&nbsp&nbsp<img
-					src='"""),_display_(Seq[Any](/*30.12*/routes/*30.18*/.Assets.at("images/logo.png"))),format.raw/*30.47*/("""' style="height: 15px; width: 250px;"></a>
-			</div>
-			<div class="navbar-collapse collapse" style="height:">
-				<ul class="nav navbar-nav navbar-right">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" style="padding-bottom: 0;" href="/climate"><img
+                    src='"""),_display_(Seq[Any](/*29.27*/routes/*29.33*/.Assets.at("images/NASA_JPL_logo.png"))),format.raw/*29.71*/("""'
+                    style="height: 40px; width: 220px;">&nbsp&nbsp<img
+                    src='"""),_display_(Seq[Any](/*31.27*/routes/*31.33*/.Assets.at("images/logo.png"))),format.raw/*31.62*/("""' style="height: 15px; width: 250px;"></a>
+        </div>
+        <div class="navbar-collapse collapse" style="height:">
+            <ul class="nav navbar-nav navbar-right">
 
-					<li class="dropdown"><a href="#"
-											class="dropdown-toggle" data-toggle="dropdown">Workflow<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
+                <li class="dropdown"><a href="#"
+                                        class="dropdown-toggle" data-toggle="dropdown">Workflow<b
+                        class="caret"></b></a>
+                    <ul class="dropdown-menu">
 
-							<li><a href=""""),_display_(Seq[Any](/*40.22*/routes/*40.28*/.WorkflowController.workflows())),format.raw/*40.59*/("""">Workflow List</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*41.22*/routes/*41.28*/.TagController.tags())),format.raw/*41.49*/("""">Tag List</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*42.22*/routes/*42.28*/.WorkflowController.createWorkflow())),format.raw/*42.64*/("""">Create Workflow</a></li>
-						</ul>
+                        <li><a href=""""),_display_(Seq[Any](/*41.39*/routes/*41.45*/.WorkflowController.workflows())),format.raw/*41.76*/("""">Workflow List</a></li>
+						<li><a href=""""),_display_(Seq[Any](/*42.21*/routes/*42.27*/.TagController.tagCloud())),format.raw/*42.52*/("""">Tag Cloud</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*43.39*/routes/*43.45*/.TagController.tags())),format.raw/*43.66*/("""">Tag List</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*44.39*/routes/*44.45*/.WorkflowController.createWorkflow())),format.raw/*44.81*/("""">Create Workflow</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*45.39*/routes/*45.45*/.WorkflowController.workflowsByTopViewCount())),format.raw/*45.90*/("""">Workflow Popularity</a></li>
+                    </ul>
 
-					</li>
-					
-					<li class="dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown">Service<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
+                </li>
 
-						<li><a href=""""),_display_(Seq[Any](/*52.21*/routes/*52.27*/.ClimateServiceController.climateServices())),format.raw/*52.70*/("""">Service List</a></li>
-					
-						</ul>
-					
-					</li>
-					<li class="dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown">Dataset<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-						
-						<li><a href=""""),_display_(Seq[Any](/*62.21*/routes/*62.27*/.DatasetController.datasetList())),format.raw/*62.59*/("""">Dataset List</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*63.21*/routes/*63.27*/.DatasetController.searchDataset())),format.raw/*63.61*/("""">Search dataset</a></li>
-						</ul>
-					</li>
-					"""),format.raw/*66.42*/("""
-						"""),format.raw/*67.67*/("""
-							"""),format.raw/*68.34*/("""
-						"""),format.raw/*69.37*/("""
-							"""),format.raw/*70.101*/("""
-							"""),format.raw/*71.106*/("""
-						"""),format.raw/*72.16*/("""
-					"""),format.raw/*73.15*/("""
-					
-					<li class="dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown">About<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-						<li><a href=""""),_display_(Seq[Any](/*79.21*/routes/*79.27*/.ClimateServiceController.home())),format.raw/*79.59*/("""">Home</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*80.21*/routes/*80.27*/.AboutusController.aboutUs())),format.raw/*80.55*/("""">About Us</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*81.21*/routes/*81.27*/.AboutusController.aboutProject())),format.raw/*81.60*/("""">About project</a></li>
-						</ul>
-					</li>
-					"""),_display_(Seq[Any](/*84.7*/if(session.get("userId") == null || session.get("userId").trim.isEmpty)/*84.78*/ {_display_(Seq[Any](format.raw/*84.80*/("""
-					<li class="dropdown"><a href="#"
-											class="dropdown-toggle" data-toggle="dropdown">Sign In / Sign Up<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href=""""),_display_(Seq[Any](/*89.22*/routes/*89.28*/.UserController.signInForm)),format.raw/*89.54*/("""">Sign In</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*90.22*/routes/*90.28*/.UserController.signUpForm)),format.raw/*90.54*/("""">Sign Up</a></li>
-						</ul>
-					</li>
-					""")))}/*93.7*/else/*93.11*/{_display_(Seq[Any](format.raw/*93.12*/("""
-					<li class="dropdown"><a href="#"
-											class="dropdown-toggle" data-toggle="dropdown">My Profile<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href=""""),_display_(Seq[Any](/*98.22*/routes/*98.28*/.UserController.profile)),format.raw/*98.51*/("""">Profile</a></li>
-							"""),_display_(Seq[Any](/*99.9*/if(session.get("userId").equals("112"))/*99.48*/ {_display_(Seq[Any](format.raw/*99.50*/("""
-							<li><a href=""""),_display_(Seq[Any](/*100.22*/routes/*100.28*/.UserController.allUsers)),format.raw/*100.52*/("""">All Users</a></li>
-							""")))})),format.raw/*101.9*/("""
-							<li><a href=""""),_display_(Seq[Any](/*102.22*/routes/*102.28*/.UserController.showFriends)),format.raw/*102.55*/("""">Friends</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*103.22*/routes/*103.28*/.UserController.showSubscriptions)),format.raw/*103.61*/("""">Subscriptions</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*104.22*/routes/*104.28*/.UserGroupController.showGroups)),format.raw/*104.59*/("""">User Groups</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*105.22*/routes/*105.28*/.UserController.signOut)),format.raw/*105.51*/("""">Sign Out</a></li>
-						</ul>
-					</li>
-					""")))})),format.raw/*108.7*/("""
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
-		</div>
-	</div>
+
+                <li class="dropdown"><a href="#"
+                                        class="dropdown-toggle" data-toggle="dropdown">Service<b
+                        class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href=""""),_display_(Seq[Any](/*56.39*/routes/*56.45*/.ClimateServiceController.climateServices())),format.raw/*56.88*/("""">Service List</a></li>
+                    </ul>
+
+                </li>
+                <li class="dropdown"><a href="#"
+                                        class="dropdown-toggle" data-toggle="dropdown">Dataset<b
+                        class="caret"></b></a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href=""""),_display_(Seq[Any](/*65.39*/routes/*65.45*/.DatasetController.datasetList())),format.raw/*65.77*/("""">Dataset List</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*66.39*/routes/*66.45*/.DatasetController.searchDataset())),format.raw/*66.79*/("""">Search dataset</a></li>
+                    </ul>
+                </li>
+                """),format.raw/*70.52*/("""
+                                        """),format.raw/*71.101*/("""
+                    """),format.raw/*72.47*/("""
+                    """),format.raw/*74.49*/("""
+                        """),format.raw/*77.27*/("""
+                        """),format.raw/*80.27*/("""
+                        """),format.raw/*83.23*/("""
+                    """),format.raw/*86.19*/("""
+
+                <li class="dropdown"><a href="#"
+                                        class="dropdown-toggle" data-toggle="dropdown">About<b
+                        class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href=""""),_display_(Seq[Any](/*92.39*/routes/*92.45*/.ClimateServiceController.home())),format.raw/*92.77*/("""">Home</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*93.39*/routes/*93.45*/.AboutusController.aboutUs())),format.raw/*93.73*/("""">About Us</a></li>
+                        <li><a href=""""),_display_(Seq[Any](/*94.39*/routes/*94.45*/.AboutusController.aboutProject())),format.raw/*94.78*/("""">About project</a></li>
+                    </ul>
+                </li>
+
+                """),_display_(Seq[Any](/*98.18*/if(session.get("userId") == null || session.get("userId").trim.isEmpty)/*98.89*/ {_display_(Seq[Any](format.raw/*98.91*/("""
+                    <li class="dropdown"><a href="#"
+                    class="dropdown-toggle" data-toggle="dropdown">Sign In / Sign Up<b
+                    class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""""),_display_(Seq[Any](/*103.43*/routes/*103.49*/.UserController.signInForm)),format.raw/*103.75*/("""">Sign In</a></li>
+                            <li><a href=""""),_display_(Seq[Any](/*104.43*/routes/*104.49*/.UserController.signUpForm)),format.raw/*104.75*/("""">Sign Up</a></li>
+                        </ul>
+                    </li>
+                """)))}/*107.18*/else/*107.22*/{_display_(Seq[Any](format.raw/*107.23*/("""
+                    <li class="dropdown"><a href="#"
+                    class="dropdown-toggle" data-toggle="dropdown">My Profile<b
+                    class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""""),_display_(Seq[Any](/*112.43*/routes/*112.49*/.UserController.profile)),format.raw/*112.72*/("""">Profile</a></li>
+                            """),_display_(Seq[Any](/*113.30*/if(session.get("userId").equals("112"))/*113.69*/ {_display_(Seq[Any](format.raw/*113.71*/("""
+                                <li><a href=""""),_display_(Seq[Any](/*114.47*/routes/*114.53*/.UserController.allUsers)),format.raw/*114.77*/("""">All Users</a></li>
+                            """)))})),format.raw/*115.30*/("""
+                            <li><a href=""""),_display_(Seq[Any](/*116.43*/routes/*116.49*/.UserController.showFriends)),format.raw/*116.76*/("""">Friends</a></li>
+                            <li><a href=""""),_display_(Seq[Any](/*117.43*/routes/*117.49*/.UserController.showSubscriptions)),format.raw/*117.82*/("""">Subscriptions</a></li>
+                            <li><a href=""""),_display_(Seq[Any](/*118.43*/routes/*118.49*/.UserGroupController.showGroups)),format.raw/*118.80*/("""">User Groups</a></li>
+                            <li><a href=""""),_display_(Seq[Any](/*119.43*/routes/*119.49*/.UserController.signOut)),format.raw/*119.72*/("""">Sign Out</a></li>
+                        </ul>
+                    </li>
+                """)))})),format.raw/*122.18*/("""
+
+
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
 """))}
     }
     
@@ -164,11 +170,11 @@ Seq[Any](format.raw/*18.4*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 10 08:17:01 UTC 2015
+                    DATE: Fri Dec 11 08:39:51 UTC 2015
                     SOURCE: /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/header.scala.html
-                    HASH: af40685ac9c8cabb10f4f4d01d601572a1ecb7a1
-                    MATRIX: 3171->1205|3267->1207|3799->1703|3814->1709|3874->1747|3974->1811|3989->1817|4040->1846|4425->2195|4440->2201|4493->2232|4575->2278|4590->2284|4633->2305|4710->2346|4725->2352|4783->2388|5061->2630|5076->2636|5141->2679|5427->2929|5442->2935|5496->2967|5576->3011|5591->3017|5647->3051|5729->3141|5764->3208|5800->3242|5835->3279|5872->3380|5909->3486|5944->3502|5978->3517|6203->3706|6218->3712|6272->3744|6344->3780|6359->3786|6409->3814|6485->3854|6500->3860|6555->3893|6644->3947|6724->4018|6764->4020|7001->4221|7016->4227|7064->4253|7140->4293|7155->4299|7203->4325|7269->4373|7282->4377|7321->4378|7551->4572|7566->4578|7611->4601|7673->4628|7721->4667|7761->4669|7820->4691|7836->4697|7883->4721|7944->4750|8003->4772|8019->4778|8069->4805|8146->4845|8162->4851|8218->4884|8301->4930|8317->4936|8371->4967|8452->5011|8468->5017|8514->5040|8595->5089
-                    LINES: 56->18|59->18|70->29|70->29|70->29|71->30|71->30|71->30|81->40|81->40|81->40|82->41|82->41|82->41|83->42|83->42|83->42|93->52|93->52|93->52|103->62|103->62|103->62|104->63|104->63|104->63|107->66|108->67|109->68|110->69|111->70|112->71|113->72|114->73|120->79|120->79|120->79|121->80|121->80|121->80|122->81|122->81|122->81|125->84|125->84|125->84|130->89|130->89|130->89|131->90|131->90|131->90|134->93|134->93|134->93|139->98|139->98|139->98|140->99|140->99|140->99|141->100|141->100|141->100|142->101|143->102|143->102|143->102|144->103|144->103|144->103|145->104|145->104|145->104|146->105|146->105|146->105|149->108
+                    HASH: 460e1931f20ead04aa501ddea828a3d3e6fde16f
+                    MATRIX: 3339->1288|3435->1290|4066->1885|4081->1891|4141->1929|4276->2028|4291->2034|4342->2063|4833->2518|4848->2524|4901->2555|4982->2600|4997->2606|5044->2631|5139->2690|5154->2696|5197->2717|5291->2775|5306->2781|5364->2817|5465->2882|5480->2888|5547->2933|5944->3294|5959->3300|6024->3343|6412->3695|6427->3701|6481->3733|6579->3795|6594->3801|6650->3835|6768->3979|6838->4080|6887->4127|6936->4199|6989->4367|7042->4540|7095->4616|7144->4680|7458->4958|7473->4964|7527->4996|7617->5050|7632->5056|7682->5084|7776->5142|7791->5148|7846->5181|7973->5272|8053->5343|8093->5345|8407->5622|8423->5628|8472->5654|8570->5715|8586->5721|8635->5747|8747->5839|8761->5843|8801->5844|9108->6114|9124->6120|9170->6143|9255->6191|9304->6230|9345->6232|9429->6279|9445->6285|9492->6309|9575->6359|9655->6402|9671->6408|9721->6435|9819->6496|9835->6502|9891->6535|9995->6602|10011->6608|10065->6639|10167->6704|10183->6710|10229->6733|10355->6826
+                    LINES: 56->18|59->18|70->29|70->29|70->29|72->31|72->31|72->31|82->41|82->41|82->41|83->42|83->42|83->42|84->43|84->43|84->43|85->44|85->44|85->44|86->45|86->45|86->45|97->56|97->56|97->56|106->65|106->65|106->65|107->66|107->66|107->66|110->70|111->71|112->72|113->74|114->77|115->80|116->83|117->86|123->92|123->92|123->92|124->93|124->93|124->93|125->94|125->94|125->94|129->98|129->98|129->98|134->103|134->103|134->103|135->104|135->104|135->104|138->107|138->107|138->107|143->112|143->112|143->112|144->113|144->113|144->113|145->114|145->114|145->114|146->115|147->116|147->116|147->116|148->117|148->117|148->117|149->118|149->118|149->118|150->119|150->119|150->119|153->122
                     -- GENERATED --
                 */
             

@@ -37,7 +37,7 @@ public class WorkflowController extends Controller {
         this.commentRepository = commentRepository;
         this.levelRepository = levelRepository;
     }
-
+    @BodyParser.Of(value = BodyParser.Json.class, maxLength = 1024 * 1024)
     public Result addWorkflow() {
         JsonNode json = request().body().asJson();
         if (json == null) {

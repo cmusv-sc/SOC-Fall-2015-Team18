@@ -40,22 +40,18 @@ public class APICall {
 					@Override
 					public JsonNode apply(WS.Response response)
 							throws Throwable {
-						JsonNode node = response.asJson();
-						int status = response.getStatus();
-						System.out.println("Pre return json node: "+node);
-						if (status == 200 || status == 201) {
-							return node;
+						if (response.getStatus() == 200
+								|| response.getStatus() == 201) {
+							return response.asJson();
 						} else {
-							Logger.info(""+status);
+							Logger.info(""+response.getStatus());
 							return createResponse(ResponseType.GETERROR);
 						}
 					}
 				});
 
 		try {
-			JsonNode node = bodyPromise.get(10000L);
-			System.out.println("return json node: "+ node);
-			return node;
+			return bodyPromise.get(10000L);
 		} catch (Exception e) {
 			return createResponse(ResponseType.TIMEOUT);
 		}
@@ -90,41 +86,28 @@ public class APICall {
 	}
 
 	public static JsonNode postAPI(String apiString, JsonNode jsonData) {
-		System.out.println("Replying");
-		System.out.println("API String: "+apiString);
 		Promise<WS.Response> responsePromise = WS.url(apiString).post(jsonData);
 		final Promise<JsonNode> bodyPromise = responsePromise
 				.map(new Function<WS.Response, JsonNode>() {
 					@Override
 					public JsonNode apply(WS.Response response)
 							throws Throwable {
-						JsonNode node = response.asJson();
-						int status = response.getStatus();
-						System.out.println("Reply: "+node);
-						System.out.println("Reply status" + status);
-						if ((status == 201 || status == 200)) {
+						if ((response.getStatus() == 201 || response
+								.getStatus() == 200)) {
 							try {
-								System.out.println("Reply3: "+node);
-								return node;
+								return response.asJson();
 							}
 							catch (Exception e){
-								System.out.println("Reply4: "+node+" "+e);
 								return createResponse(ResponseType.SUCCESS);
 							}
 						} else {
-							System.out.println("Reply5: ");
 							return createResponse(ResponseType.SAVEERROR);
 						}
 					}
 				});
 		try {
-
-			JsonNode node = bodyPromise.get(10000L);
-			System.out.println("Reply User ID: "+node.toString());
-
-			return node;
+			return bodyPromise.get(10000L);
 		} catch (Exception e) {
-			System.out.println("Bad Request");
 			return createResponse(ResponseType.TIMEOUT);
 		}
 	}

@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@790bb6f4[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@578f617a[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -779,135 +779,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-ebean_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-ebean_2.10;2.2.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/com.typesafe.play/play-java-ebean_2.10/2.2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-java-ebean_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom (2.2.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.3!play-java-ebean_2.10.pom(pom.original) (1078ms)[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/com.typesafe.play/play-java-ebean_2.10/2.2.3/jars/play-java-ebean_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/com.typesafe.play/play-java-ebean_2.10/2.2.3/jars/play-java-ebean_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java-ebean_2.10;2.2.3 in typesafe-releases[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje.ebeanorm#avaje-ebeanorm;3.2.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom (3.2.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm;3.2.2!avaje-ebeanorm.pom(pom.original) (127ms)[0m
-[0m[[0minfo[0m] [0mResolving org.avaje#avaje-javaparent;1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-javaparent;1.2 {}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje/avaje-javaparent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje/avaje-javaparent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje#avaje-javaparent;1.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom (1.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje#avaje-javaparent;1.2!avaje-javaparent.pom(pom.original) (55ms)[0m
-[0m[[0minfo[0m] [0mResolving org.avaje#avaje-parent;1.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje#avaje-parent;1.2 {}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje/avaje-parent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje/avaje-parent/1.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.avaje#avaje-parent;1.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom (1.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.avaje#avaje-parent;1.2!avaje-parent.pom(pom.original) (58ms)[0m
-[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-parent/1.2/jars/avaje-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-parent/1.2/avaje-parent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/org.avaje/avaje-javaparent/1.2/jars/avaje-javaparent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/avaje/avaje-javaparent/1.2/avaje-javaparent-1.2.jar[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/jars/avaje-ebeanorm.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/org.avaje.ebeanorm/avaje-ebeanorm/3.2.2/jars/avaje-ebeanorm.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1[0m
-[0m[[0mdebug[0m] [0m	found org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final[0m
-[0m[[0mdebug[0m] [0m	found org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java-jpa_2.10;2.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-java-jpa_2.10;2.2.3 {compile=[default(compile)]}[0m
@@ -919,102 +790,17 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final[0m
+[0m[[0mdebug[0m] [0m	found org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving com.typesafe.play#play-cache_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.play#play-cache_2.10;2.2.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/com.typesafe.play/play-cache_2.10/2.2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.play#play-cache_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/com.typesafe.play/play-cache_2.10/2.2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for com.typesafe.play#play-cache_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: no ivy file found for com.typesafe.play#play-cache_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: found md file for com.typesafe.play#play-cache_2.10;2.2.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom (2.2.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-cache_2.10;2.2.3!play-cache_2.10.pom(pom.original) (1018ms)[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/com.typesafe.play/play-cache_2.10/2.2.3/jars/play-cache_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/com.typesafe.play/play-cache_2.10/2.2.3/jars/play-cache_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	found com.typesafe.play#play-cache_2.10;2.2.3 in typesafe-releases[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0minfo[0m] [0mResolving net.sf.ehcache#ehcache-core;2.6.6 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache-core;2.6.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/net.sf.ehcache/ehcache-core/2.6.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for net.sf.ehcache#ehcache-core;2.6.6[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/net.sf.ehcache/ehcache-core/2.6.6/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for net.sf.ehcache#ehcache-core;2.6.6[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for net.sf.ehcache#ehcache-core;2.6.6[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom (2.6.6)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] net.sf.ehcache#ehcache-core;2.6.6!ehcache-core.pom(pom.original) (69ms)[0m
-[0m[[0minfo[0m] [0mResolving net.sf.ehcache#ehcache-parent;2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.sf.ehcache#ehcache-parent;2.3 {}[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/net.sf.ehcache/ehcache-parent/2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for net.sf.ehcache#ehcache-parent;2.3[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/net.sf.ehcache/ehcache-parent/2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	activator-local: no ivy file found for net.sf.ehcache#ehcache-parent;2.3[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for net.sf.ehcache#ehcache-parent;2.3[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom (2.3)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] net.sf.ehcache#ehcache-parent;2.3!ehcache-parent.pom(pom.original) (59ms)[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/net.sf.ehcache/ehcache-parent/2.3/jars/ehcache-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/net.sf.ehcache/ehcache-parent/2.3/jars/ehcache-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/net.sf.ehcache/ehcache-parent/2.3/jars/ehcache-parent.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/net.sf.ehcache/ehcache-parent/2.3/jars/ehcache-parent.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/net/sf/ehcache/ehcache-parent/2.3/ehcache-parent-2.3.jar[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/net.sf.ehcache/ehcache-core/2.6.6/jars/ehcache-core.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/net.sf.ehcache/ehcache-core/2.6.6/jars/ehcache-core.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar[0m
-[0m[[0mdebug[0m] [0m	found net.sf.ehcache#ehcache-core;2.6.6 in public[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.hibernate#hibernate-entitymanager;3.6.9.Final ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.hibernate#hibernate-entitymanager;3.6.9.Final {compile=[default(compile)]}[0m
@@ -1251,16 +1037,8 @@
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/[revision]/joda-time-[revision].pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom (2.9.1)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] joda-time#joda-time;2.9.1!joda-time.pom(pom.original) (64ms)[0m
-[0m[[0mdebug[0m] [0m		tried /root/.ivy2/local/joda-time/joda-time/2.9.1/jars/joda-time.jar[0m
-[0m[[0mdebug[0m] [0m		tried file:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/repository/joda-time/joda-time/2.9.1/jars/joda-time.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar[0m
-[0m[[0mdebug[0m] [0m		[2.9.1] joda-time#joda-time[0m
-[0m[[0mdebug[0m] [0m	found joda-time#joda-time;2.9.1 in public[0m
+[0m[[0mdebug[0m] [0m	default-cache: revision in cache: joda-time#joda-time;2.9.1[0m
+[0m[[0mdebug[0m] [0m	found joda-time#joda-time;2.9.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.9.1] joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.amazonaws#aws-java-sdk;1.7.6->joda-time#joda-time;[2.2,) [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.amazonaws#aws-java-sdk;1.7.6->joda-time#joda-time;[2.2,) [compile->runtime(*)][0m
@@ -1753,28 +1531,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -1787,27 +1543,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -2444,28 +2179,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -2478,27 +2191,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -4181,28 +3873,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -4215,27 +3885,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -4874,28 +4523,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -4908,27 +4535,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -5567,28 +5173,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -5601,27 +5185,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -7543,28 +7106,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -7577,27 +7118,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -8504,28 +8024,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jdbc_2.10;2.2.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->com.typesafe.play#play-java-jdbc_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm;3.2.2 [runtime->compile][0m
-[0m[[0mdebug[0m] [0mexcluding dependency: javax.persistence#persistence-api;1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-ebean_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-ebean_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->compile][0m
@@ -8538,27 +8036,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-java-jpa_2.10;2.2.3->org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-java-jpa_2.10;2.2.3 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.hibernate#hibernate-core;3.5.1-Final {provided=[compile(*), provided(*), runtime(*), master(*)]} => dependency: org.hibernate#hibernate-core;3.3.2.GA {provided=[compile(*), provided(*), runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: commons-logging#commons-logging;1.1.1 {test=[runtime(*), master(*)]} => dependency: commons-logging#commons-logging;1.0.4 {test=[runtime(*), master(*)]}[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->com.typesafe.play#play_2.10;2.2.3 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-cache_2.10;2.2.3->net.sf.ehcache#ehcache-core;2.6.6 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.6.1 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies net.sf.ehcache#ehcache-core;2.6.6->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.play#play-cache_2.10;2.2.3 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.hibernate#hibernate-entitymanager;3.6.9.Final [compile->compile][0m
@@ -9729,19 +9206,7 @@
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.10;2.2.3!play-java-jdbc_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-java-ebean_2.10/2.2.3/play-java-ebean_2.10-2.2.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-java-ebean_2.10;2.2.3!play-java-ebean_2.10.jar (1101ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jpa_2.10;2.2.3!play-java-jpa_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	typesafe-releases: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-cache_2.10/2.2.3/play-cache_2.10-2.2.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.play#play-cache_2.10;2.2.3!play-cache_2.10.jar (1120ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-entitymanager;3.6.9.Final!hibernate-entitymanager.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.code.gson#gson;2.2.2!gson.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.amazonaws#aws-java-sdk;1.7.6!aws-java-sdk.jar[0m
@@ -9803,20 +9268,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.logging#jboss-logging;3.1.1.GA!jboss-logging.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.fasterxml#classmate;0.8.0!classmate.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] dom4j#dom4j;1.6.1!dom4j.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm/3.2.2/avaje-ebeanorm-3.2.2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm;3.2.2!avaje-ebeanorm.jar (339ms)[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.1!avaje-ebeanorm-agent.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Final!hibernate-jpa-2.0-api.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/net/sf/ehcache/ehcache-core/2.6.6/ehcache-core-2.6.6.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] net.sf.ehcache#ehcache-core;2.6.6!ehcache-core.jar (129ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-core;3.6.9.Final!hibernate-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] cglib#cglib;2.2!cglib.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javassist#javassist;3.12.0.GA!javassist.jar[0m
@@ -9825,12 +9277,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hibernate#hibernate-commons-annotations;3.2.0.Final!hibernate-commons-annotations.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] asm#asm;3.1!asm.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.2!httpclient.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/joda-time/joda-time/2.9.1/joda-time-2.9.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] joda-time#joda-time;2.9.1!joda-time.jar (83ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] joda-time#joda-time;2.9.1!joda-time.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.2!httpcore.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-codec#commons-codec;1.6!commons-codec.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-test_2.10;2.2.3!play-test_2.10.jar[0m
@@ -9910,7 +9357,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.15!log4j.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 19579ms :: artifacts dl 3149ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 10673ms :: artifacts dl 422ms[0m
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT compile produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT runtime produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT test produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test.xml[0m
@@ -9928,5 +9375,5 @@
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-trace-test produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-test.xml[0m
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-weave produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-weave.xml[0m
 [0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-sigar produced in /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (19579ms resolve - 3149ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (10673ms resolve - 422ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

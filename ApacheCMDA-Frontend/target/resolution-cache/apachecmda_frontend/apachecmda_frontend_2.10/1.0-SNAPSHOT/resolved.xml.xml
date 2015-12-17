@@ -4,7 +4,7 @@
 		module="apachecmda_frontend_2.10"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151210175915"
+		publication="20151211083954"
 	>
 		<description>
 		ApacheCMDA_Frontend
@@ -41,9 +41,7 @@
 		<dependency org="org.aspectj" name="aspectjweaver" rev="1.7.3" conf="echo-weave->default(compile)"/>
 		<dependency org="com.typesafe.trace" name="trace-sigar-libs" rev="0.1.5" conf="echo-sigar->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.10" rev="2.2.3" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-java-ebean_2.10" rev="2.2.3" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jpa_2.10" rev="2.2.3" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.play" name="play-cache_2.10" rev="2.2.3" conf="compile->default(compile)"/>
 		<dependency org="org.hibernate" name="hibernate-entitymanager" rev="3.6.9.Final" conf="compile->default(compile)"/>
 		<dependency org="com.google.code.gson" name="gson" rev="2.2.2" conf="compile->default(compile)"/>
 		<dependency org="com.amazonaws" name="aws-java-sdk" rev="1.7.6" conf="compile->default(compile)"/>

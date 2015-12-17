@@ -43,7 +43,7 @@ public class Workflow {
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
 	@JoinTable(name = "WorkflowAndTag", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "tagId", referencedColumnName = "id") })
-	private List<Tag> tagList;
+	private List<Tag> tags;
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE})
 	@JoinTable(name = "WorkflowAndLevel", joinColumns = { @JoinColumn(name ="workflowId", referencedColumnName = "id")}, inverseJoinColumns = { @JoinColumn(name = "levelId", referencedColumnName = "id") })
@@ -54,7 +54,7 @@ public class Workflow {
 	public Workflow() {
 	}
 
-	public Workflow(String title, String description, String image, String contributor, String instruction, String dataset, List<Tag> tagList, List<Level> levelList, Long userId
+	public Workflow(String title, String description, String image, String contributor, String instruction, String dataset, List<Tag> tags, List<Level> levelList, Long userId
 					, int viewCount, int usageCount, int commentCount, int downloadCount, int referenceCount) {
 		this.title = title;
 		this.description = description;
@@ -62,7 +62,7 @@ public class Workflow {
 		this.contributor = contributor;
 		this.instruction = instruction;
 		this.dataset = dataset;
-		this.tagList = tagList;
+		this.tags = tags;
 		this.levelList = levelList;
 		this.userId = userId;
 
@@ -169,13 +169,6 @@ public class Workflow {
 		this.instruction = instruction;
 	}
 
-	public List<Tag> getTagList() {
-		return tagList;
-	}
-
-	public void setTagList(List<Tag> tagList) {
-		this.tagList = tagList;
-	}
 
 	public List<Level> getLevelList() {
 		return levelList;
@@ -194,11 +187,11 @@ public class Workflow {
 	}
 
 	public List<Tag> getTags() {
-		return tagList;
+		return tags;
 	}
 
 	public void setTags(List<Tag> tags) {
-		this.tagList = tags;
+		this.tags = tags;
 	}
 
 	@Override

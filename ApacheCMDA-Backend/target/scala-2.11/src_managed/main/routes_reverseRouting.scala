@@ -1,6 +1,6 @@
 // @SOURCE:/home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Backend/conf/routes
-// @HASH:85296ae3a79c9d88d93196e62ccc160e751446a6
-// @DATE:Fri Dec 04 02:39:46 UTC 2015
+// @HASH:a9079b2baec741b50126e740e3b44b81c6d114d7
+// @DATE:Fri Dec 11 08:30:58 UTC 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,10 +15,12 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:115
+// @LINE:118
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -33,7 +35,6 @@ import Router.queryString
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -97,11 +98,11 @@ import Router.queryString
 // @LINE:10
 package controllers {
 
-// @LINE:115
+// @LINE:118
 class ReverseAssets {
 
 
-// @LINE:115
+// @LINE:118
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -111,6 +112,7 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
@@ -128,6 +130,13 @@ def addTag(): Call = {
 def getAllTags(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "tag/getAllTags/json")
+}
+                        
+
+// @LINE:113
+def getAllTagWeights(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "tag/getAllTagWeights/json")
 }
                         
 
@@ -241,6 +250,7 @@ def deleteInstrument(id:Long): Call = {
 }
                           
 
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -255,7 +265,6 @@ def deleteInstrument(id:Long): Call = {
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -266,7 +275,7 @@ def deleteInstrument(id:Long): Call = {
 class ReverseWorkflowController {
 
 
-// @LINE:105
+// @LINE:106
 def getTop10WorkflowByDownloadCount(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getTop10WorkflowByDownloadCount/json")
@@ -280,14 +289,14 @@ def getAllLevels(id:Long): Call = {
 }
                         
 
-// @LINE:102
+// @LINE:103
 def getTop10WorkflowByViewCount(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getTop10WorkflowByViewCount/json")
 }
                         
 
-// @LINE:96
+// @LINE:97
 def getWorkflowDownloadCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getDownloadCount/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -322,28 +331,28 @@ def getAllWorkflows(): Call = {
 }
                         
 
-// @LINE:103
+// @LINE:104
 def getTop10WorkflowByUsageCount(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getTop10WorkflowByUsageCount/json")
 }
                         
 
-// @LINE:98
+// @LINE:99
 def getWorkflowCommentCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getCommentCount/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:100
+// @LINE:101
 def getWorkflowReferenceCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getReferenceCount/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:104
+// @LINE:105
 def getTop10WorkflowByCommentCount(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getTop10WorkflowByCommentCount/json")
@@ -357,7 +366,7 @@ def addComment(): Call = {
 }
                         
 
-// @LINE:97
+// @LINE:98
 def updateWorkflowDownloadCount(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("PUT", _prefix + { _defaultPrefix } + "workflow/updateDownloadCount/id/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -371,49 +380,49 @@ def getWorkflow(id:Long): Call = {
 }
                         
 
-// @LINE:99
+// @LINE:100
 def updateWorkflowCommentCount(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("PUT", _prefix + { _defaultPrefix } + "workflow/updateCommentCount/id/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:101
+// @LINE:102
 def updateWorkflowReferenceCount(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("PUT", _prefix + { _defaultPrefix } + "workflow/updateReferenceCount/id/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:95
+// @LINE:96
 def updateWorkflowUsageCount(id:Long): Call = {
    import ReverseRouteContext.empty
    Call("PUT", _prefix + { _defaultPrefix } + "workflow/updateUsageCount/id/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:93
+// @LINE:94
 def updateWorkflowViewCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/updateViewCount/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:92
+// @LINE:93
 def getWorkflowViewCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getViewCount/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
-// @LINE:106
+// @LINE:107
 def getTop10WorkflowByReferenceCount(): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getTop10WorkflowByReferenceCount/json")
 }
                         
 
-// @LINE:94
+// @LINE:95
 def getWorkflowUsageCount(id:Long): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
    Call("GET", _prefix + { _defaultPrefix } + "workflow/getUsageCount/" + implicitly[PathBindable[Long]].unbind("id", id))
@@ -806,10 +815,12 @@ def getFriend(id:Long): Call = {
                   
 
 
-// @LINE:115
+// @LINE:118
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -824,7 +835,6 @@ def getFriend(id:Long): Call = {
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -889,11 +899,11 @@ def getFriend(id:Long): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
-// @LINE:115
+// @LINE:118
 class ReverseAssets {
 
 
-// @LINE:115
+// @LINE:118
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -907,6 +917,7 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
@@ -930,6 +941,17 @@ def getAllTags : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tag/getAllTags/json"})
+      }
+   """
+)
+                        
+
+// @LINE:113
+def getAllTagWeights : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.TagController.getAllTagWeights",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tag/getAllTagWeights/json"})
       }
    """
 )
@@ -1093,6 +1115,7 @@ def deleteInstrument : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -1107,7 +1130,6 @@ def deleteInstrument : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -1118,7 +1140,7 @@ def deleteInstrument : JavascriptReverseRoute = JavascriptReverseRoute(
 class ReverseWorkflowController {
 
 
-// @LINE:105
+// @LINE:106
 def getTop10WorkflowByDownloadCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getTop10WorkflowByDownloadCount",
    """
@@ -1140,7 +1162,7 @@ def getAllLevels : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:102
+// @LINE:103
 def getTop10WorkflowByViewCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getTop10WorkflowByViewCount",
    """
@@ -1151,7 +1173,7 @@ def getTop10WorkflowByViewCount : JavascriptReverseRoute = JavascriptReverseRout
 )
                         
 
-// @LINE:96
+// @LINE:97
 def getWorkflowDownloadCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getWorkflowDownloadCount",
    """
@@ -1206,7 +1228,7 @@ def getAllWorkflows : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:103
+// @LINE:104
 def getTop10WorkflowByUsageCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getTop10WorkflowByUsageCount",
    """
@@ -1217,7 +1239,7 @@ def getTop10WorkflowByUsageCount : JavascriptReverseRoute = JavascriptReverseRou
 )
                         
 
-// @LINE:98
+// @LINE:99
 def getWorkflowCommentCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getWorkflowCommentCount",
    """
@@ -1228,7 +1250,7 @@ def getWorkflowCommentCount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:100
+// @LINE:101
 def getWorkflowReferenceCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getWorkflowReferenceCount",
    """
@@ -1239,7 +1261,7 @@ def getWorkflowReferenceCount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:104
+// @LINE:105
 def getTop10WorkflowByCommentCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getTop10WorkflowByCommentCount",
    """
@@ -1261,7 +1283,7 @@ def addComment : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:97
+// @LINE:98
 def updateWorkflowDownloadCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.updateWorkflowDownloadCount",
    """
@@ -1283,7 +1305,7 @@ def getWorkflow : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:99
+// @LINE:100
 def updateWorkflowCommentCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.updateWorkflowCommentCount",
    """
@@ -1294,7 +1316,7 @@ def updateWorkflowCommentCount : JavascriptReverseRoute = JavascriptReverseRoute
 )
                         
 
-// @LINE:101
+// @LINE:102
 def updateWorkflowReferenceCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.updateWorkflowReferenceCount",
    """
@@ -1305,7 +1327,7 @@ def updateWorkflowReferenceCount : JavascriptReverseRoute = JavascriptReverseRou
 )
                         
 
-// @LINE:95
+// @LINE:96
 def updateWorkflowUsageCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.updateWorkflowUsageCount",
    """
@@ -1316,7 +1338,7 @@ def updateWorkflowUsageCount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:93
+// @LINE:94
 def updateWorkflowViewCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.updateWorkflowViewCount",
    """
@@ -1327,7 +1349,7 @@ def updateWorkflowViewCount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:92
+// @LINE:93
 def getWorkflowViewCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getWorkflowViewCount",
    """
@@ -1338,7 +1360,7 @@ def getWorkflowViewCount : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:106
+// @LINE:107
 def getTop10WorkflowByReferenceCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getTop10WorkflowByReferenceCount",
    """
@@ -1349,7 +1371,7 @@ def getTop10WorkflowByReferenceCount : JavascriptReverseRoute = JavascriptRevers
 )
                         
 
-// @LINE:94
+// @LINE:95
 def getWorkflowUsageCount : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.WorkflowController.getWorkflowUsageCount",
    """
@@ -1918,10 +1940,12 @@ def getFriend : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:115
+// @LINE:118
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -1936,7 +1960,6 @@ def getFriend : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -2001,11 +2024,11 @@ def getFriend : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
-// @LINE:115
+// @LINE:118
 class ReverseAssets {
 
 
-// @LINE:115
+// @LINE:118
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -2014,6 +2037,7 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:113
 // @LINE:112
 // @LINE:111
 // @LINE:110
@@ -2029,6 +2053,12 @@ def addTag(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:110
 def getAllTags(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.TagController]).getAllTags(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.TagController", "getAllTags", Seq(classOf[String]), "GET", """Tag""", _prefix + """tag/getAllTags/json""")
+)
+                      
+
+// @LINE:113
+def getAllTagWeights(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.TagController]).getAllTagWeights(), HandlerDef(this.getClass.getClassLoader, "", "controllers.TagController", "getAllTagWeights", Seq(), "GET", """""", _prefix + """tag/getAllTagWeights/json""")
 )
                       
 
@@ -2130,6 +2160,7 @@ def deleteInstrument(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Han
 }
                           
 
+// @LINE:107
 // @LINE:106
 // @LINE:105
 // @LINE:104
@@ -2144,7 +2175,6 @@ def deleteInstrument(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Han
 // @LINE:95
 // @LINE:94
 // @LINE:93
-// @LINE:92
 // @LINE:87
 // @LINE:86
 // @LINE:85
@@ -2155,7 +2185,7 @@ def deleteInstrument(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Han
 class ReverseWorkflowController {
 
 
-// @LINE:105
+// @LINE:106
 def getTop10WorkflowByDownloadCount(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getTop10WorkflowByDownloadCount(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getTop10WorkflowByDownloadCount", Seq(classOf[String]), "GET", """""", _prefix + """workflow/getTop10WorkflowByDownloadCount/json""")
 )
@@ -2167,13 +2197,13 @@ def getAllLevels(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.
 )
                       
 
-// @LINE:102
+// @LINE:103
 def getTop10WorkflowByViewCount(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getTop10WorkflowByViewCount(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getTop10WorkflowByViewCount", Seq(classOf[String]), "GET", """""", _prefix + """workflow/getTop10WorkflowByViewCount/json""")
 )
                       
 
-// @LINE:96
+// @LINE:97
 def getWorkflowDownloadCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getWorkflowDownloadCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getWorkflowDownloadCount", Seq(classOf[Long], classOf[String]), "GET", """""", _prefix + """workflow/getDownloadCount/$id<[^/]+>""")
 )
@@ -2203,25 +2233,25 @@ def getAllWorkflows(format:String): play.api.mvc.HandlerRef[_] = new play.api.mv
 )
                       
 
-// @LINE:103
+// @LINE:104
 def getTop10WorkflowByUsageCount(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getTop10WorkflowByUsageCount(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getTop10WorkflowByUsageCount", Seq(classOf[String]), "GET", """""", _prefix + """workflow/getTop10WorkflowByUsageCount/json""")
 )
                       
 
-// @LINE:98
+// @LINE:99
 def getWorkflowCommentCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getWorkflowCommentCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getWorkflowCommentCount", Seq(classOf[Long], classOf[String]), "GET", """""", _prefix + """workflow/getCommentCount/$id<[^/]+>""")
 )
                       
 
-// @LINE:100
+// @LINE:101
 def getWorkflowReferenceCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getWorkflowReferenceCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getWorkflowReferenceCount", Seq(classOf[Long], classOf[String]), "GET", """""", _prefix + """workflow/getReferenceCount/$id<[^/]+>""")
 )
                       
 
-// @LINE:104
+// @LINE:105
 def getTop10WorkflowByCommentCount(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getTop10WorkflowByCommentCount(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getTop10WorkflowByCommentCount", Seq(classOf[String]), "GET", """""", _prefix + """workflow/getTop10WorkflowByCommentCount/json""")
 )
@@ -2233,7 +2263,7 @@ def addComment(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:97
+// @LINE:98
 def updateWorkflowDownloadCount(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).updateWorkflowDownloadCount(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "updateWorkflowDownloadCount", Seq(classOf[Long]), "PUT", """""", _prefix + """workflow/updateDownloadCount/id/$id<[^/]+>""")
 )
@@ -2245,43 +2275,43 @@ def getWorkflow(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.a
 )
                       
 
-// @LINE:99
+// @LINE:100
 def updateWorkflowCommentCount(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).updateWorkflowCommentCount(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "updateWorkflowCommentCount", Seq(classOf[Long]), "PUT", """""", _prefix + """workflow/updateCommentCount/id/$id<[^/]+>""")
 )
                       
 
-// @LINE:101
+// @LINE:102
 def updateWorkflowReferenceCount(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).updateWorkflowReferenceCount(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "updateWorkflowReferenceCount", Seq(classOf[Long]), "PUT", """""", _prefix + """workflow/updateReferenceCount/id/$id<[^/]+>""")
 )
                       
 
-// @LINE:95
+// @LINE:96
 def updateWorkflowUsageCount(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).updateWorkflowUsageCount(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "updateWorkflowUsageCount", Seq(classOf[Long]), "PUT", """""", _prefix + """workflow/updateUsageCount/id/$id<[^/]+>""")
 )
                       
 
-// @LINE:93
+// @LINE:94
 def updateWorkflowViewCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).updateWorkflowViewCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "updateWorkflowViewCount", Seq(classOf[Long], classOf[String]), "GET", """""", _prefix + """workflow/updateViewCount/$id<[^/]+>""")
 )
                       
 
-// @LINE:92
+// @LINE:93
 def getWorkflowViewCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getWorkflowViewCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getWorkflowViewCount", Seq(classOf[Long], classOf[String]), "GET", """Popularity""", _prefix + """workflow/getViewCount/$id<[^/]+>""")
 )
                       
 
-// @LINE:106
+// @LINE:107
 def getTop10WorkflowByReferenceCount(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getTop10WorkflowByReferenceCount(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getTop10WorkflowByReferenceCount", Seq(classOf[String]), "GET", """""", _prefix + """workflow/getTop10WorkflowByReferenceCount/json""")
 )
                       
 
-// @LINE:94
+// @LINE:95
 def getWorkflowUsageCount(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.WorkflowController]).getWorkflowUsageCount(id, format), HandlerDef(this.getClass.getClassLoader, "", "controllers.WorkflowController", "getWorkflowUsageCount", Seq(classOf[Long], classOf[String]), "GET", """""", _prefix + """workflow/getUsageCount/$id<[^/]+>""")
 )
