@@ -1,0 +1,35 @@
+1. Pull down the docker image from DockerHub: cmusvsc/soc-fall-2015-team18:latest
+
+2. Pull down the code from GitHub: cmusv-sc/SOC-Fall-2015-Team18-Lead-Xin-Wan and note down the path to your project folder.
+
+3. Start your docker terminal and run following command to start the docker image: docker run -it -p 9234:9000 -p 9035:9034 -v <Path_to_your_project>:/home/SOC-Fall-2015/Dev cmusvsc/soc-fall-2015-team18:latest
+
+4. Cd into the project folder:
+cd /home/SOC-Fall-2015/Dev/SOC-Fall-2015
+
+5. If you want to start another terminal to avoid using screen command: try running this on your docker terminal:
+docker exec -i -t <Docker instance id> bash
+Then it will show up as your second terminal for the same docker instance.
+You can access your docker instance id by looking into your first started docker terminal, it will show up as:
+root@ca138e32509f:
+Here the String ca138e32509f is your docker instance id.
+
+6. Here you work on the docker container (an instance of the docker image). First start your mysql service by running:
+	service mysql start
+
+7. Then cd into your Backend folder:
+	cd /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Backend
+	And run your backend:
+	./activator “run 9034”
+
+8. Cd into your Frontend folder:
+	cd /home/SOC-Fall-2015/Dev/SOC-Fall-2015/ApacheCMDA-Frontend
+	And run your frontend:
+	./activator run
+9. Open your web browser on your machine, as we redirected the port 9000 on our docker container to port 9234 on our own machine, open http://localhost:9234/ in your browser and wait for the frontend code to finish compiling.
+
+10. Trigger the backend code to compile by clicking on the ‘service list’ option in the service tab.
+
+11. Wait for the service list to show up, then the project is running successfully.
+
+

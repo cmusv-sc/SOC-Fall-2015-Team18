@@ -1,0 +1,5 @@
+Team Member		Github		DockerHub	Email
+Xin Wan			vincentwan	vincentwan	xin.wan@west.cmu.edu
+Bailiang Gong		gongbailiang	gongbailiang	bailiang.gong@west.cmu.edu
+Peng Tong		tongpengdl	tongpengdl	peng.tong@west.cmu.edu
+Na Li			nalicmu		nalicmu		na.li@west.cmu.edu
